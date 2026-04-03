@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Halley — Rapid Prototyping Specialist</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .hero-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.75rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      color: var(--muted);
+      padding: 0.75rem 1.75rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* BUILDS GRID */
+    .builds {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .build-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .build-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .build-card p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .build-time {
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .live-badge {
+      display: inline-block;
+      background: rgba(79, 142, 247, 0.15);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* CREDENTIALS */
+    .creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .cred-tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    /* CONTACT */
+    .contact-line {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-line a {
+      color: var(--text);
+    }
+
+    /* FOOTER */
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; }
+      .cta-group { flex-direction: column; }
+      .btn-primary, .btn-secondary { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">Rapid Prototyping Specialist</div>
+    <h1>Alan Halley</h1>
+    <p>I build software prototypes using AI-assisted development that help founders and product teams validate ideas in hours, not weeks.</p>
+    <div class="cta-group">
+      <a href="https://ilhe.us/" class="btn-primary" target="_blank">See a Live Example →</a>
+      <a href="mailto:alan@alanhalley.com" class="btn-secondary">Email Me</a>
+    </div>
+  </div>
+
+  <!-- RECENT WORK -->
+  <section>
+    <h2>Recent Work</h2>
+    <div class="builds">
+
+      <div class="build-card">
+        <h3><a href="https://ilhe.us/" target="_blank">Best of Ilhéus</a><span class="live-badge">Live</span></h3>
+        <p>Tourist guide app with interactive map, location filtering, mobile-responsive.</p>
+        <div class="build-time">2 hours</div>
+      </div>
+
+      <div class="build-card">
+        <h3>Mind Mapping Tool</h3>
+        <p>Visual mind mapping interface with nested nodes. Cross-platform clone of MindNode.</p>
+        <div class="build-time">1 hour</div>
+      </div>
+
+      <div class="build-card">
+        <h3>Kanban Task Board</h3>
+        <p>Unique 2-column view with drag-and-drop task management.</p>
+        <div class="build-time">1 hour</div>
+      </div>
+
+      <div class="build-card">
+        <h3>Hierarchical Outliner</h3>
+        <p>Outliner with columns for project planning and documentation.</p>
+        <div class="build-time">1 prompt</div>
+      </div>
+
+      <div class="build-card">
+        <h3><a href="https://decisions.alanhalley.com/">Decision Analysis Tool</a>
+          <span class="live-badge">Live</span>
+        </h3>
+        <p>AI builds an interactive decision tree from plain language. Expected monetary value analysis with optimal alternative highlighted. Free tier + Pro ($9/mo).</p>
+        <a href="https://youtu.be/mSdUclhR8sA" style="font-size:12px;">▶ Watch demo</a>
+        <div class="build-time">1 weekend</div>
+      </div>
+
+      <div class="build-card">
+        <h3>Data Flow Diagram Editor</h3>
+        <p>Gane-Sarson notation with entities, processes, and data stores.</p>
+        <div class="build-time">1 hour</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHO I HELP -->
+  <section>
+    <h2>Who I Help</h2>
+    <div class="builds">
+      <div class="build-card">
+        <h3>SaaS Founders</h3>
+        <p>Validate a new feature idea before committing to full development.</p>
+      </div>
+      <div class="build-card">
+        <h3>Product Teams</h3>
+        <p>Explore UX concepts and test assumptions with real, clickable prototypes.</p>
+      </div>
+      <div class="build-card">
+        <h3>Enterprises</h3>
+        <p>Evaluate technical feasibility quickly before allocating development resources.</p>
+      </div>
+      <div class="build-card">
+        <h3>Startups</h3>
+        <p>Build investor demos and proof-of-concept prototypes in days, not months.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About</h2>
+    <p style="color: var(--muted); margin-bottom: 1.5rem;">
+      30+ years in software development and project management. PMP certified.
+      Managed 70+ projects at Boeing, EMC, Los Alamos, Dell, and numerous startups.
+      Ran an iPhone app development agency from Brazil for 12 years (2008–2020).
+    </p>
+    <p style="color: var(--muted); margin-bottom: 2rem;">
+      Semi-retired in Ilhéus, Brazil. Selectively available for interesting projects
+      that benefit from rapid prototyping. Not looking for long-term development
+      or maintenance work — just fast, focused validation builds.
+    </p>
+    <div class="creds">
+      <span class="cred-tag">PMP Certified</span>
+      <span class="cred-tag">30+ Years Experience</span>
+      <span class="cred-tag">70+ Projects Managed</span>
+      <span class="cred-tag">Remote Since 2008</span>
+      <span class="cred-tag">Ilhéus, Brazil</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Get in Touch</h2>
+    <p class="contact-line">Email: <a href="mailto:alan@alanhalley.com">alan@alanhalley.com</a></p>
+    <p class="contact-line">LinkedIn: <a href="https://linkedin.com/in/alanhalley" target="_blank">linkedin.com/in/alanhalley</a></p>
+    <p class="contact-line">Fiverr: <a href="https://www.fiverr.com/alanhalley" target="_blank">fiverr.com/alanhalley</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Alan Halley</span>
+    <span>Based in Ilhéus, Brazil · Serving global clients remotely</span>
+  </footer>
+
+</body>
+</html>

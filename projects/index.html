@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alan Halley — Projects 2025–26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Outfit', sans-serif; background: #f9f8f6; color: #1a1a18; min-height: 100vh; }
+  .port { max-width: 960px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+  .header { margin-bottom: 2.5rem; border-bottom: 1px solid #c8c6be; padding-bottom: 1.5rem; }
+  .header h1 { font-family: 'DM Serif Display', serif; font-size: 2.2rem; font-weight: 400; color: #1a1a18; line-height: 1.2; }
+  .header p { font-size: 13px; color: #888780; margin-top: 0.5rem; font-family: 'DM Mono', monospace; }
+
+  .grid { display: grid; gap: 1rem; }
+  .row-2 { grid-template-columns: repeat(2, 1fr); }
+  .row-3 { grid-template-columns: repeat(3, 1fr); }
+
+  .card {
+    background: #ffffff;
+    border: 2px solid #c8c6be;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex; flex-direction: column; gap: 10px;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+  }
+  .accent-b2b::after    { background: #1D9E75; }
+  .accent-b2c::after    { background: #378ADD; }
+  .accent-tool::after   { background: #7F77DD; }
+  .accent-memoir::after { background: #D85A30; }
+  .accent-infra::after  { background: #888780; }
+
+  .card:hover, .card.active {
+    border-color: #1a1a18;
+    box-shadow: 0 0 0 2px #1a1a18;
+  }
+  .card:hover .card-desc, .card.active .card-desc { color: #1a1a18; }
+
+  .card-header { display: flex; align-items: flex-start; gap: 12px; }
+  .icon { width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .icon svg { width: 20px; height: 20px; }
+  .card-top { flex: 1; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card-name { font-size: 15px; font-weight: 500; color: #1a1a18; line-height: 1.3; }
+  .card-url { font-size: 11px; font-family: 'DM Mono', monospace; color: #185FA5; margin-top: 2px; }
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
+  .badge-live     { background: #EAF3DE; color: #3B6D11; }
+  .badge-internal { background: #E6F1FB; color: #185FA5; }
+  .badge-idea     { background: #FAEEDA; color: #854F0B; }
+  .badge-dev      { background: #EEEDFE; color: #534AB7; }
+  .card-desc { font-size: 13px; color: #5F5E5A; line-height: 1.65; transition: color 0.15s; }
+  .card-meta { font-size: 11px; font-family: 'DM Mono', monospace; color: #aaa9a2; margin-top: auto; padding-top: 8px; border-top: 1px solid #eeedea; }
+
+  .icon-teal   { background: #E1F5EE; }
+  .icon-blue   { background: #E6F1FB; }
+  .icon-purple { background: #EEEDFE; }
+  .icon-coral  { background: #FAECE7; }
+  .icon-gray   { background: #F1EFE8; }
+
+  @media (max-width: 640px) {
+    .row-2, .row-3 { grid-template-columns: 1fr; }
+    .port { padding: 1.5rem 1rem 3rem; }
+    .header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="port">
+  <div class="header">
+    <h1>Alan Halley — Projects 2025–26</h1>
+    <p>Ilhéus, Bahia · AI-first solo developer · alanhalley.com</p>
+  </div>
+
+  <!-- Row 1: 2 cards -->
+  <div class="grid row-2" style="margin-bottom:1rem">
+
+    <div class="card accent-b2b">
+      <div class="card-header">
+        <div class="icon icon-teal">
+          <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="2" width="14" height="16" rx="2" stroke="#1D9E75" stroke-width="1.5"/><line x1="6" y1="7" x2="14" y2="7" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="10" x2="14" y2="10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="13" x2="10" y2="13" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><rect x="12" y="12" width="5" height="5" rx="0.5" stroke="#1D9E75" stroke-width="1.2"/><path d="M13 14h3M13 15.5h3" stroke="#1D9E75" stroke-width="0.8" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">ilhe.us/menus</div><div class="card-url">ilhe.us/menus</div></div>
+          <span class="badge badge-live">Live</span>
+        </div>
+      </div>
+      <div class="card-desc">Digital menus for Ilhéus restaurants. Photo → OCR → HTML → deploy → QR code. Annual subscription (R$150–300/yr). Six menus live with PT/EN/ES language selector and font size controls. QR codes print-ready on every page.</div>
+      <div class="card-meta">6 menus live · sales window Sep–Dec</div>
+    </div>
+
+    <div class="card accent-b2c">
+      <div class="card-header">
+        <div class="icon icon-blue">
+          <svg viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="5.5" stroke="#378ADD" stroke-width="1.5"/><line x1="13.5" y1="13.5" x2="17" y2="17" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/><line x1="6.5" y1="9" x2="11.5" y2="9" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/><line x1="9" y1="6.5" x2="9" y2="11.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">ilheus.menu</div><div class="card-url">ilheus.menu</div></div>
+          <span class="badge badge-live">Live</span>
+        </div>
+      </div>
+      <div class="card-desc">Claude-powered dish search engine for diners and tourists. Ask in Portuguese, English, or Spanish — "onde tem polvo?" Search logs via Supabase. Featured restaurant slots (Destaques) are the monetization path.</div>
+      <div class="card-meta">23 restaurants · Vite/Vercel</div>
+    </div>
+
+  </div>
+
+  <!-- Row 2: 3 cards -->
+  <div class="grid row-3" style="margin-bottom:1rem">
+
+    <div class="card accent-tool">
+      <div class="card-header">
+        <div class="icon icon-purple">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M10 3L12.5 8H17L13.5 11.5L15 16.5L10 13.5L5 16.5L6.5 11.5L3 8H7.5L10 3Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Decisions</div><div class="card-url">decisions.alanhalley.com</div></div>
+          <span class="badge badge-live">Live</span>
+        </div>
+      </div>
+      <div class="card-desc">AI-first decision tree with Expected Monetary Value calculation. Prose in → decision tree out. "Alan's Notation" as public prior art. Stripe subscriptions live. An idea 10 years in the making, shipped in 2025.</div>
+      <div class="card-meta">Stripe · Claude API</div>
+    </div>
+
+    <div class="card accent-tool">
+      <div class="card-header">
+        <div class="icon icon-purple">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10 Q4 4 10 4 Q16 4 16 10 Q16 14 13 15.5 L13 18 L10 16 L7 18 L7 15.5 Q4 14 4 10Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/><circle cx="10" cy="10" r="1" fill="#7F77DD"/><circle cx="7" cy="10" r="1" fill="#7F77DD"/><circle cx="13" cy="10" r="1" fill="#7F77DD"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Signal</div><div class="card-url">signal.alanhalley.com</div></div>
+          <span class="badge badge-idea">Landing page</span>
+        </div>
+      </div>
+      <div class="card-desc">Unified monitor for Discord, Gmail, GitHub, and Linear. Surfaces what matters, filters what doesn't. Landing page live — full build pending.</div>
+      <div class="card-meta">Idea stage · landing page live</div>
+    </div>
+
+    <div class="card accent-tool">
+      <div class="card-header">
+        <div class="icon icon-purple">
+          <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#7F77DD" stroke-width="1.5"/><line x1="3" y1="8" x2="17" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="7" y1="5" x2="7" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="13" y1="5" x2="13" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="6" y1="11.5" x2="9" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/><line x1="11" y1="11.5" x2="14" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Glance</div><div class="card-url">glance.alanhalley.com</div></div>
+          <span class="badge badge-idea">Landing page</span>
+        </div>
+      </div>
+      <div class="card-desc">Unified Gmail, Google Calendar, and Tasks view. One screen, no context switching. Landing page live — designed for focus and clarity.</div>
+      <div class="card-meta">Idea stage · landing page live</div>
+    </div>
+
+  </div>
+
+  <!-- Row 3: 3 cards -->
+  <div class="grid row-3">
+
+    <div class="card accent-memoir">
+      <div class="card-header">
+        <div class="icon icon-coral">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M5 3 Q5 2 6 2 L14 2 Q15 2 15 3 L15 17 Q15 18 14 18 L6 18 Q5 18 5 17 Z" stroke="#D85A30" stroke-width="1.5"/><line x1="8" y1="6" x2="12" y2="6" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="9" x2="13" y2="9" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="12" x2="13" y2="12" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="15" x2="11" y2="15" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Memoirs</div><div class="card-url">private · Supabase</div></div>
+          <span class="badge badge-dev">In progress</span>
+        </div>
+      </div>
+      <div class="card-desc">A life in technology, told through cars, addresses, and the slow arrival of the future in Ilhéus. 75 years, 24 cars, 20+ stories. Theme: "everything has changed and nothing has changed."</div>
+      <div class="card-meta">3 stories publishable · timeline viewer live</div>
+    </div>
+
+    <div class="card accent-infra">
+      <div class="card-header">
+        <div class="icon icon-gray">
+          <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><circle cx="4" cy="15" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><circle cx="16" cy="15" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><line x1="10" y1="8.5" x2="4" y2="12.5" stroke="#5F5E5A" stroke-width="1.2"/><line x1="10" y1="8.5" x2="16" y2="12.5" stroke="#5F5E5A" stroke-width="1.2"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Issues App</div><div class="card-url">issues.alanhalley.com</div></div>
+          <span class="badge badge-internal">Internal</span>
+        </div>
+      </div>
+      <div class="card-desc">Lightweight issue tracker built for the alan + claude + CN workflow. Projects, statuses, assignees, comments. MCP-connected so Claude can read and update issues from any conversation.</div>
+      <div class="card-meta">Supabase · MCP · self-hosted</div>
+    </div>
+
+    <div class="card accent-infra">
+      <div class="card-header">
+        <div class="icon icon-gray">
+          <svg viewBox="0 0 20 20" fill="none"><ellipse cx="10" cy="10" rx="7" ry="7" stroke="#5F5E5A" stroke-width="1.5"/><path d="M10 6 Q13 8 13 10 Q13 12 10 14 Q7 12 7 10 Q7 8 10 6Z" stroke="#5F5E5A" stroke-width="1.2"/><circle cx="10" cy="10" r="1.5" fill="#5F5E5A"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Open Brain</div><div class="card-url">Supabase / pgvector</div></div>
+          <span class="badge badge-internal">Internal</span>
+        </div>
+      </div>
+      <div class="card-desc">Working memory across all Claude sessions. Thoughts, ideas, and context captured in one place, searchable by meaning via vector embeddings. The connective tissue between claude.ai and Nimbalyst.</div>
+      <div class="card-meta">pgvector · MCP · by Nate B. Jones</div>
+    </div>
+
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
