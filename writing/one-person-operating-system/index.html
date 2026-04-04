@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Person Operating System - Alan Halley</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow,
+    .meta,
+    .back-link,
+    h1,
+    h2,
+    ul {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 690px;
+    }
+
+    ul {
+      margin: 0 0 1.4rem 1.2rem;
+      max-width: 690px;
+      color: var(--muted);
+    }
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Software Essay</div>
+    <h1>The One-Person Operating System</h1>
+    <p class="dek">Solo development is not only about how fast you can produce a prototype. It is about building an operating layer that keeps projects, notes, memory, deploys, and decisions coherent over time.</p>
+    <div class="meta">Software | Essay</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <h2>From Project Management to Solo Development</h2>
+    <p>For most of my career, I was a project manager. I helped teams organize work, manage scope, and get software shipped.</p>
+    <p>Now I am doing something different: building software largely on my own, with AI agents as part of the workflow.</p>
+    <p>People sometimes describe this as vibe coding. Sometimes that is fair. A prompt can produce a prototype with surprising speed. But the more interesting story is not the prompt. It is everything required to make solo development actually work over time.</p>
+
+    <h2>The Real Work Behind the Code</h2>
+    <p>The code matters, but so do the systems around the code: issue tracking, notes, memory, credentials, repos, domains, deploy workflows, experiments, and internal tooling.</p>
+    <p>When one person is building multiple products and prototypes, context becomes fragile. You are not only switching between tasks. You are switching between whole operating modes:</p>
+    <ul>
+      <li>product work</li>
+      <li>infrastructure work</li>
+      <li>planning</li>
+      <li>deployment</li>
+      <li>writing</li>
+      <li>debugging</li>
+      <li>remembering what exists</li>
+      <li>deciding what deserves attention now</li>
+    </ul>
+    <p>That switching cost is not abstract. It consumes real time.</p>
+
+    <h2>The Hidden Tax of Solo Building</h2>
+    <p>A lot of modern discussion about AI-assisted development focuses on speed. How fast can you get from idea to demo? How quickly can you turn a prompt into an interface?</p>
+    <p>That is only half the picture.</p>
+    <p>The other half is what happens after the demo: Can you find it again? Can you deploy it? Can you maintain it? Can you connect it to the rest of your work? Can you stop it from becoming one more disconnected artifact?</p>
+    <p>In practice, I often spend more time on GitHub, Cloudflare, Vercel, auth, DNS, build settings, credentials, and configuration drift than on the feature that started the task.</p>
+    <p>That is not a distraction from the work. It is part of the work.</p>
+
+    <h2>Building the Operating Layer</h2>
+    <p>To deal with that, I have been building a one-person operating system.</p>
+    <p>Some of it is public: products, prototypes, landing pages, and experiments.</p>
+    <p>Some of it is internal: Nimbalyst, issue tracking, memory systems, workflow tooling, MCP-based integrations, and CLI-assisted agent workflows.</p>
+    <p>The purpose is not to build internal tools for their own sake. The purpose is to reduce context switching and preserve continuity.</p>
+    <p>I do not want to keep acting as a human API between tools.</p>
+
+    <h2>What Is Getting Easier</h2>
+    <p>MCP and CLI workflows are starting to change the shape of the work. Tasks that recently required a lot of manual copy and paste in PowerShell can increasingly be handled through more continuous agent-assisted workflows.</p>
+    <p>That does not eliminate judgment. It does not remove testing or decisions. But it does reduce the amount of repetitive orchestration needed to move work forward.</p>
+    <p>That matters more than novelty.</p>
+
+    <h2>The Tradeoff</h2>
+    <p>There is a cost.</p>
+    <p>Every internal system can become its own source of maintenance. Every layer meant to reduce friction can create new complexity. The machinery around the work can start competing with the work itself.</p>
+    <p>I feel that tension often.</p>
+    <p>The challenge is not simply to build more tools. It is to build just enough system that product work becomes easier and more continuous, without drowning in your own infrastructure.</p>
+
+    <h2>What This Site Represents</h2>
+    <p>This site shows some of the public output. Behind it is a larger experiment: what it looks like for one experienced operator, working with AI, to build not just apps, but a working environment for building apps.</p>
+    <p>The stack will change. The tools will change. Some experiments will hold up; others will be demoted. But the direction is clear.</p>
+    <p>I am not trying to build everything. I am trying to build a better way to build.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
+

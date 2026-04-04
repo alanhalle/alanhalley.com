@@ -15,6 +15,8 @@
       --text: #e8eaf0;
       --muted: #8b90a0;
       --border: #2a2d3a;
+      --software: #4f8ef7;
+      --memoir: #d85a30;
     }
 
     body {
@@ -170,12 +172,15 @@
     }
 
     .meta {
-      color: var(--accent);
       font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-bottom: 0.5rem;
+      color: var(--accent);
     }
+
+    .meta-memoir { color: var(--memoir); }
+    .meta-software { color: var(--software); }
 
     .card h3 {
       color: var(--text);
@@ -220,9 +225,9 @@
   <div class="hero">
     <div class="eyebrow">Writing</div>
     <h1>Essays from the second act.</h1>
-    <p>This side of the site is for longer pieces: memoir, stories, and notes that do not belong inside a project card. Some will be about software. Some will be about Brazil. Some will just be about what happens when a long life refuses to simplify itself.</p>
+    <p>This side of the site holds both professional and personal writing. The labels matter. Some pieces are about software, solo development, and the operating layer behind the work. Others are memoir pieces and stories that belong to the same life but a different mode.</p>
     <div class="cta-group">
-      <a href="/writing/my-florida-vacation/" class="btn-primary">Read the First Essay</a>
+      <a href="/writing/one-person-operating-system/" class="btn-primary">Read the Software Essay</a>
       <a href="/about/" class="btn-secondary">About Alan</a>
     </div>
   </div>
@@ -230,8 +235,13 @@
   <section>
     <h2>Published</h2>
     <div class="cards">
+      <a class="card" href="/writing/one-person-operating-system/">
+        <div class="meta meta-software">Software essay</div>
+        <h3>The One-Person Operating System</h3>
+        <p>What solo development actually requires once the demo exists: memory, issues, deploys, credentials, and a working layer that reduces context switching.</p>
+      </a>
       <a class="card" href="/writing/my-florida-vacation/">
-        <div class="meta">Memoir</div>
+        <div class="meta meta-memoir">Memoir</div>
         <h3>My Florida Vacation</h3>
         <p>Three days after moving into a house north of Columbia, it caught fire. That was only the first problem.</p>
       </a>
@@ -239,9 +249,9 @@
   </section>
 
   <section>
-    <h2>What Belongs Here</h2>
-    <p>The writing and the prototype work are related. Both come from the same habits: paying attention, compressing complexity, and preferring specifics over slogans.</p>
-    <p>More essays will show up here over time. For now, this is the first marker that the site is not only a portfolio.</p>
+    <h2>How To Read This Section</h2>
+    <p>The writing and the prototype work are related, but they are not the same genre. Keeping them on one site makes sense. Labeling them clearly matters just as much.</p>
+    <p>Software essays explain how I think and work. Memoir pieces explain the longer arc behind that work. Both belong here.</p>
   </section>
 
   <footer>
