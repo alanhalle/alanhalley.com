@@ -30,6 +30,10 @@
     position: relative;
     overflow: hidden;
   }
+  a.card {
+    color: inherit;
+    text-decoration: none;
+  }
   .card::after {
     content: '';
     position: absolute;
@@ -88,7 +92,7 @@
   <div style="font-size:11px; font-family:'DM Mono', monospace; letter-spacing:0.08em; text-transform:uppercase; color:#888780; margin-bottom:0.75rem;">Live Products</div>
   <div class="grid row-2" style="margin-bottom:1rem">
 
-    <div class="card accent-b2c" data-url="https://ilhe.us/">
+    <a class="card accent-b2c" href="https://ilhe.us/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-blue">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3.5C6.4 3.5 4 6.2 4 9.2C4 13.1 8.3 16.4 9.5 17.2C9.8 17.4 10.2 17.4 10.5 17.2C11.7 16.4 16 13.1 16 9.2C16 6.2 13.6 3.5 10 3.5Z" stroke="#378ADD" stroke-width="1.5"/><circle cx="10" cy="9" r="2.2" stroke="#378ADD" stroke-width="1.2"/></svg>
@@ -100,9 +104,9 @@
       </div>
       <div class="card-desc">Curated tourist guide for Ilhéus with map-first browsing, category filtering, and a stronger point of view than generic travel search.</div>
       <div class="card-meta">Tourist guide · Vite/Vercel</div>
-    </div>
+    </a>
 
-    <div class="card accent-b2b" data-url="https://ilhe.us/menus/">
+    <a class="card accent-b2b" href="https://ilhe.us/menus/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-teal">
           <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="2" width="14" height="16" rx="2" stroke="#1D9E75" stroke-width="1.5"/><line x1="6" y1="7" x2="14" y2="7" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="10" x2="14" y2="10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="13" x2="10" y2="13" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><rect x="12" y="12" width="5" height="5" rx="0.5" stroke="#1D9E75" stroke-width="1.2"/><path d="M13 14h3M13 15.5h3" stroke="#1D9E75" stroke-width="0.8" stroke-linecap="round"/></svg>
@@ -113,10 +117,10 @@
         </div>
       </div>
       <div class="card-desc">Restaurant menu pages for Ilhéus with pt/en/es support, QR-code use at the table, and a practical local sales model.</div>
-      <div class="card-meta">6 menus live · B2B local product</div>
-    </div>
+      <div class="card-meta">20+ menus live · B2B local product</div>
+    </a>
 
-    <div class="card accent-b2c" data-url="https://ilheus.menu/">
+    <a class="card accent-b2c" href="https://ilheus.menu/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-blue">
           <svg viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="5.5" stroke="#378ADD" stroke-width="1.5"/><line x1="13.5" y1="13.5" x2="17" y2="17" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/><line x1="6.5" y1="9" x2="11.5" y2="9" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/><line x1="9" y1="6.5" x2="9" y2="11.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/></svg>
@@ -128,9 +132,9 @@
       </div>
       <div class="card-desc">Dish-search product for restaurant menus in Ilhéus. Multilingual search, structured menu data, and a clearer monetization path than a generic directory.</div>
       <div class="card-meta">23 restaurants · search-first experience</div>
-    </div>
+    </a>
 
-    <div class="card accent-tool" data-url="https://decisions.alanhalley.com/">
+    <a class="card accent-tool" href="https://decisions.alanhalley.com/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3L12.5 8H17L13.5 11.5L15 16.5L10 13.5L5 16.5L6.5 11.5L3 8H7.5L10 3Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/></svg>
@@ -142,14 +146,14 @@
       </div>
       <div class="card-desc">AI-first decision tree with Expected Monetary Value calculation. Prose in, structured decision analysis out.</div>
       <div class="card-meta">Stripe · Claude API</div>
-    </div>
+    </a>
 
   </div>
 
   <div style="font-size:11px; font-family:'DM Mono', monospace; letter-spacing:0.08em; text-transform:uppercase; color:#888780; margin:1.5rem 0 0.75rem;">Emerging Bets</div>
   <div class="grid row-2" style="margin-bottom:1rem">
 
-    <div class="card accent-tool" data-url="https://signal.alanhalley.com/">
+    <a class="card accent-tool" href="https://signal.alanhalley.com/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><path d="M4 10 Q4 4 10 4 Q16 4 16 10 Q16 14 13 15.5 L13 18 L10 16 L7 18 L7 15.5 Q4 14 4 10Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/><circle cx="10" cy="10" r="1" fill="#7F77DD"/><circle cx="7" cy="10" r="1" fill="#7F77DD"/><circle cx="13" cy="10" r="1" fill="#7F77DD"/></svg>
@@ -161,9 +165,9 @@
       </div>
       <div class="card-desc">Unified monitor for Discord, Gmail, GitHub, and Linear. Clear positioning exists; product build still pending.</div>
       <div class="card-meta">Concept validation · public landing page</div>
-    </div>
+    </a>
 
-    <div class="card accent-tool" data-url="https://glance.alanhalley.com/">
+    <a class="card accent-tool" href="https://glance.alanhalley.com/" target="_blank" rel="noopener">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#7F77DD" stroke-width="1.5"/><line x1="3" y1="8" x2="17" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="7" y1="5" x2="7" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="13" y1="5" x2="13" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="6" y1="11.5" x2="9" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/><line x1="11" y1="11.5" x2="14" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/></svg>
@@ -175,7 +179,7 @@
       </div>
       <div class="card-desc">Unified Gmail, Calendar, and Tasks view. Positioning is public; product remains early.</div>
       <div class="card-meta">Concept validation · public landing page</div>
-    </div>
+    </a>
 
     <div class="card accent-tool">
       <div class="card-header">
@@ -254,15 +258,6 @@
 
   </div>
 </div>
-<script>
-  document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', (e) => {
-      if (e.target.closest('a')) return;
-      const url = card.dataset.url;
-      if (url) window.location.href = url;
-    });
-  });
-</script>
 </body>
 </html>
 
