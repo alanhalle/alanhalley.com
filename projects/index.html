@@ -81,11 +81,14 @@
     <h1>Alan Halley — Projects 2025–26</h1>
     <p>Ilhéus, Bahia · AI-first solo developer · alanhalley.com</p>
   </div>
+  <p style="font-size:13px; color:#888780; margin-bottom:1.75rem; max-width:760px; line-height:1.6; font-family:'DM Mono', monospace;">
+    A working map of live products, early-stage bets, and internal systems. Some items are public and clickable. Others are private or still taking shape, but they help explain where the work is heading.
+  </p>
 
-  <!-- Row 1: 3 cards -->
-  <div class="grid row-3" style="margin-bottom:1rem">
+  <div style="font-size:11px; font-family:'DM Mono', monospace; letter-spacing:0.08em; text-transform:uppercase; color:#888780; margin-bottom:0.75rem;">Live Products</div>
+  <div class="grid row-2" style="margin-bottom:1rem">
 
-    <div class="card accent-b2c">
+    <div class="card accent-b2c" data-url="https://ilhe.us/">
       <div class="card-header">
         <div class="icon icon-blue">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3.5C6.4 3.5 4 6.2 4 9.2C4 13.1 8.3 16.4 9.5 17.2C9.8 17.4 10.2 17.4 10.5 17.2C11.7 16.4 16 13.1 16 9.2C16 6.2 13.6 3.5 10 3.5Z" stroke="#378ADD" stroke-width="1.5"/><circle cx="10" cy="9" r="2.2" stroke="#378ADD" stroke-width="1.2"/></svg>
@@ -95,11 +98,11 @@
           <span class="badge badge-live">Live</span>
         </div>
       </div>
-      <div class="card-desc">Curated tourist guide for Ilheus: restaurants, beaches, churches, cacao history, and practical city navigation. Built as a cleaner answer to generic travel search, grounded in local knowledge and on-the-ground experience.</div>
+      <div class="card-desc">Curated tourist guide for Ilhéus with map-first browsing, category filtering, and a stronger point of view than generic travel search.</div>
       <div class="card-meta">Tourist guide · Vite/Vercel</div>
     </div>
 
-    <div class="card accent-b2b">
+    <div class="card accent-b2b" data-url="https://ilhe.us/menus/">
       <div class="card-header">
         <div class="icon icon-teal">
           <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="2" width="14" height="16" rx="2" stroke="#1D9E75" stroke-width="1.5"/><line x1="6" y1="7" x2="14" y2="7" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="10" x2="14" y2="10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="13" x2="10" y2="13" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><rect x="12" y="12" width="5" height="5" rx="0.5" stroke="#1D9E75" stroke-width="1.2"/><path d="M13 14h3M13 15.5h3" stroke="#1D9E75" stroke-width="0.8" stroke-linecap="round"/></svg>
@@ -109,11 +112,11 @@
           <span class="badge badge-live">Live</span>
         </div>
       </div>
-      <div class="card-desc">Digital menus for Ilhéus restaurants. Photo → OCR → HTML → deploy → QR code. Annual subscription (R$150–300/yr). Six menus live with PT/EN/ES language selector and font size controls. QR codes print-ready on every page.</div>
-      <div class="card-meta">6 menus live · sales window Sep–Dec</div>
+      <div class="card-desc">Restaurant menu pages for Ilhéus with pt/en/es support, QR-code use at the table, and a practical local sales model.</div>
+      <div class="card-meta">6 menus live · B2B local product</div>
     </div>
 
-    <div class="card accent-b2c">
+    <div class="card accent-b2c" data-url="https://ilheus.menu/">
       <div class="card-header">
         <div class="icon icon-blue">
           <svg viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="5.5" stroke="#378ADD" stroke-width="1.5"/><line x1="13.5" y1="13.5" x2="17" y2="17" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/><line x1="6.5" y1="9" x2="11.5" y2="9" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/><line x1="9" y1="6.5" x2="9" y2="11.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/></svg>
@@ -123,16 +126,11 @@
           <span class="badge badge-live">Live</span>
         </div>
       </div>
-      <div class="card-desc">Claude-powered dish search engine for diners and tourists. Ask in Portuguese, English, or Spanish — "onde tem polvo?" Search logs via Supabase. Featured restaurant slots (Destaques) are the monetization path.</div>
-      <div class="card-meta">23 restaurants · Vite/Vercel</div>
+      <div class="card-desc">Dish-search product for restaurant menus in Ilhéus. Multilingual search, structured menu data, and a clearer monetization path than a generic directory.</div>
+      <div class="card-meta">23 restaurants · search-first experience</div>
     </div>
 
-  </div>
-
-  <!-- Row 2: 3 cards -->
-  <div class="grid row-3" style="margin-bottom:1rem">
-
-    <div class="card accent-tool">
+    <div class="card accent-tool" data-url="https://decisions.alanhalley.com/">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3L12.5 8H17L13.5 11.5L15 16.5L10 13.5L5 16.5L6.5 11.5L3 8H7.5L10 3Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/></svg>
@@ -142,11 +140,16 @@
           <span class="badge badge-live">Live</span>
         </div>
       </div>
-      <div class="card-desc">AI-first decision tree with Expected Monetary Value calculation. Prose in → decision tree out. "Alan's Notation" as public prior art. Stripe subscriptions live. An idea 10 years in the making, shipped in 2025.</div>
+      <div class="card-desc">AI-first decision tree with Expected Monetary Value calculation. Prose in, structured decision analysis out.</div>
       <div class="card-meta">Stripe · Claude API</div>
     </div>
 
-    <div class="card accent-tool">
+  </div>
+
+  <div style="font-size:11px; font-family:'DM Mono', monospace; letter-spacing:0.08em; text-transform:uppercase; color:#888780; margin:1.5rem 0 0.75rem;">Emerging Bets</div>
+  <div class="grid row-2" style="margin-bottom:1rem">
+
+    <div class="card accent-tool" data-url="https://signal.alanhalley.com/">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><path d="M4 10 Q4 4 10 4 Q16 4 16 10 Q16 14 13 15.5 L13 18 L10 16 L7 18 L7 15.5 Q4 14 4 10Z" stroke="#7F77DD" stroke-width="1.5" stroke-linejoin="round"/><circle cx="10" cy="10" r="1" fill="#7F77DD"/><circle cx="7" cy="10" r="1" fill="#7F77DD"/><circle cx="13" cy="10" r="1" fill="#7F77DD"/></svg>
@@ -156,11 +159,11 @@
           <span class="badge badge-idea">Landing page</span>
         </div>
       </div>
-      <div class="card-desc">Unified monitor for Discord, Gmail, GitHub, and Linear. Surfaces what matters, filters what doesn't. Landing page live — full build pending.</div>
-      <div class="card-meta">Idea stage · landing page live</div>
+      <div class="card-desc">Unified monitor for Discord, Gmail, GitHub, and Linear. Clear positioning exists; product build still pending.</div>
+      <div class="card-meta">Concept validation · public landing page</div>
     </div>
 
-    <div class="card accent-tool">
+    <div class="card accent-tool" data-url="https://glance.alanhalley.com/">
       <div class="card-header">
         <div class="icon icon-purple">
           <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#7F77DD" stroke-width="1.5"/><line x1="3" y1="8" x2="17" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="7" y1="5" x2="7" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="13" y1="5" x2="13" y2="8" stroke="#7F77DD" stroke-width="1.2"/><line x1="6" y1="11.5" x2="9" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/><line x1="11" y1="11.5" x2="14" y2="11.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"/></svg>
@@ -170,13 +173,41 @@
           <span class="badge badge-idea">Landing page</span>
         </div>
       </div>
-      <div class="card-desc">Unified Gmail, Google Calendar, and Tasks view. One screen, no context switching. Landing page live — designed for focus and clarity.</div>
-      <div class="card-meta">Idea stage · landing page live</div>
+      <div class="card-desc">Unified Gmail, Calendar, and Tasks view. Positioning is public; product remains early.</div>
+      <div class="card-meta">Concept validation · public landing page</div>
+    </div>
+
+    <div class="card accent-tool">
+      <div class="card-header">
+        <div class="icon icon-purple">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 4h5v5H4zM11 4h5v5h-5zM4 11h5v5H4zM11 11h5v5h-5z" stroke="#7F77DD" stroke-width="1.5"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Thinking Canvas</div><div class="card-url">early-stage prototype</div></div>
+          <span class="badge badge-dev">Early stage</span>
+        </div>
+      </div>
+      <div class="card-desc">Canvas-style thinking tool for exploring ideas spatially. Private prototype today, but already screenshotable with example data.</div>
+      <div class="card-meta">Prototype · not public yet</div>
+    </div>
+
+    <div class="card accent-tool">
+      <div class="card-header">
+        <div class="icon icon-purple">
+          <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#7F77DD" stroke-width="1.5"/><line x1="7" y1="3" x2="7" y2="17" stroke="#7F77DD" stroke-width="1.1"/><line x1="12" y1="3" x2="12" y2="17" stroke="#7F77DD" stroke-width="1.1"/><line x1="3" y1="8" x2="17" y2="8" stroke="#7F77DD" stroke-width="1.1"/></svg>
+        </div>
+        <div class="card-top">
+          <div><div class="card-name">Schema Explorer</div><div class="card-url">early-stage prototype</div></div>
+          <span class="badge badge-dev">Early stage</span>
+        </div>
+      </div>
+      <div class="card-desc">Browsable schema and structure viewer for relational data. Useful for memoir data, outlines, and other structured systems thinking.</div>
+      <div class="card-meta">Prototype · not public yet</div>
     </div>
 
   </div>
 
-  <!-- Row 3: 3 cards -->
+  <div style="font-size:11px; font-family:'DM Mono', monospace; letter-spacing:0.08em; text-transform:uppercase; color:#888780; margin:1.5rem 0 0.75rem;">Internal Systems</div>
   <div class="grid row-3">
 
     <div class="card accent-memoir">
@@ -185,12 +216,12 @@
           <svg viewBox="0 0 20 20" fill="none"><path d="M5 3 Q5 2 6 2 L14 2 Q15 2 15 3 L15 17 Q15 18 14 18 L6 18 Q5 18 5 17 Z" stroke="#D85A30" stroke-width="1.5"/><line x1="8" y1="6" x2="12" y2="6" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="9" x2="13" y2="9" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="12" x2="13" y2="12" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="15" x2="11" y2="15" stroke="#D85A30" stroke-width="1.2" stroke-linecap="round"/></svg>
         </div>
         <div class="card-top">
-          <div><div class="card-name">Memoirs</div><div class="card-url">private · Supabase</div></div>
+          <div><div class="card-name">Memoirs</div><div class="card-url">private system</div></div>
           <span class="badge badge-dev">In progress</span>
         </div>
       </div>
-      <div class="card-desc">A life in technology, told through cars, addresses, and the slow arrival of the future in Ilhéus. 75 years, 24 cars, 20+ stories. Theme: "everything has changed and nothing has changed."</div>
-      <div class="card-meta">3 stories publishable · timeline viewer live</div>
+      <div class="card-desc">Private memoir database and writing system anchored around years, homes, cars, stories, and people.</div>
+      <div class="card-meta">Private database · local timeline tooling</div>
     </div>
 
     <div class="card accent-infra">
@@ -199,11 +230,11 @@
           <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><circle cx="4" cy="15" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><circle cx="16" cy="15" r="2.5" stroke="#5F5E5A" stroke-width="1.5"/><line x1="10" y1="8.5" x2="4" y2="12.5" stroke="#5F5E5A" stroke-width="1.2"/><line x1="10" y1="8.5" x2="16" y2="12.5" stroke="#5F5E5A" stroke-width="1.2"/></svg>
         </div>
         <div class="card-top">
-          <div><div class="card-name">Issues App</div><div class="card-url">issues.alanhalley.com</div></div>
+          <div><div class="card-name">Issues App</div><div class="card-url">internal workflow</div></div>
           <span class="badge badge-internal">Internal</span>
         </div>
       </div>
-      <div class="card-desc">Lightweight issue tracker built for the alan + claude + CN workflow. Projects, statuses, assignees, comments. MCP-connected so Claude can read and update issues from any conversation.</div>
+      <div class="card-desc">Issue tracker for the Alan + Claude + Codex workflow. Useful context for how product work is actually managed.</div>
       <div class="card-meta">Supabase · MCP · self-hosted</div>
     </div>
 
@@ -213,21 +244,22 @@
           <svg viewBox="0 0 20 20" fill="none"><ellipse cx="10" cy="10" rx="7" ry="7" stroke="#5F5E5A" stroke-width="1.5"/><path d="M10 6 Q13 8 13 10 Q13 12 10 14 Q7 12 7 10 Q7 8 10 6Z" stroke="#5F5E5A" stroke-width="1.2"/><circle cx="10" cy="10" r="1.5" fill="#5F5E5A"/></svg>
         </div>
         <div class="card-top">
-          <div><div class="card-name">Open Brain</div><div class="card-url">Supabase / pgvector</div></div>
+          <div><div class="card-name">Open Brain</div><div class="card-url">internal memory layer</div></div>
           <span class="badge badge-internal">Internal</span>
         </div>
       </div>
-      <div class="card-desc">Working memory across all Claude sessions. Thoughts, ideas, and context captured in one place, searchable by meaning via vector embeddings. The connective tissue between claude.ai and Nimbalyst.</div>
-      <div class="card-meta">pgvector · MCP · by Nate B. Jones</div>
+      <div class="card-desc">Cross-session working memory for ideas, tasks, and context. Not a product, but part of the operating system behind the work.</div>
+      <div class="card-meta">pgvector · MCP</div>
     </div>
 
   </div>
 </div>
 <script>
   document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-      document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
-      card.classList.add('active');
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      const url = card.dataset.url;
+      if (url) window.location.href = url;
     });
   });
 </script>
