@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easing In - Alan Halley</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow,
+    .meta,
+    .back-link,
+    h1,
+    h2,
+    ul {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 690px;
+    }
+
+    ul {
+      margin: 0 0 1.4rem 1.2rem;
+      max-width: 690px;
+      color: var(--muted);
+    }
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Software Essay</div>
+    <h1>Easing In</h1>
+    <p class="dek">How I got from twenty years of files on three systems to a practice that actually works. It was not a straight line.</p>
+    <div class="meta">Software | Essay</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <h2>The File Problem</h2>
+    <p>I had files on three systems. Twenty years on iCloud. Six years on Google Drive. Two years on my PC hard drive.</p>
+    <p>They were not organized the same way. They were not really organized at all.</p>
+    <p>I read about AI organizing files. Claude built me a Python script that sorted my Downloads folder. A few weeks later it organized Documents. That worked. I still had three different folder structures on three different systems with no obvious way to reconcile them.</p>
+    <p>Interesting parlor trick. Not a solution.</p>
+
+    <h2>The Structure Search</h2>
+    <p>So I started looking for a structure. What should it be?</p>
+    <p>I tried Notion. I downloaded Obsidian and stared at an empty structure for maybe 5 seconds.</p>
+    <p>ContextCollapse on YouTube had videos comparing notes software — Notion, Obsidian, Webflowy, his favorite. He eventually put an AI on top of Webflowy. It was not easy.</p>
+    <p>I started reading about Second Brain. I did not read the original book. All the structures seemed much alike to me. The taxonomy was different in each one; the underlying idea was the same: capture, organize, retrieve.</p>
+    <p>What I needed was not a better taxonomy. I needed a practice.</p>
+
+    <h2>The Stumble</h2>
+    <p>In December I stumbled onto Emergent.sh and built some basic prototypes with surprisingly little effort. Then I tried to install their version of OpenClaw. The install did not go smoothly. I was charged for the tokens I burned trying to get it running.</p>
+    <p>Carl, a developer whose work I had been following, was promoting Nimbalyst. I tried it. I got a Claude $20/month account.</p>
+
+    <h2>The Landing</h2>
+    <p>Over the following months I built several apps. Some are prototypes. Some are concepts. Some are landing pages only. One is a QR menu platform serving 33 restaurants in a city of 180,000 people on the coast of Bahia, Brazil.</p>
+    <p>The file problem did not go away. It became less important than the work happening in the files.</p>
+    <p>That is how you ease in. Not a leap. A series of small commitments to tools that turned out to matter, and a quick exit from the ones that did not.</p>
+    <p>The six months between December and now have contained more change than many years before them. I think I am finally living in the future.</p>
+    <p>The files are still on three systems. I have stopped caring.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
