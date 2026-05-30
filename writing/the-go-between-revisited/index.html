@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Go-Between, Revisited - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/the-go-between-revisited/" />
+  <meta name="description" content="The Go-Between, Revisited — on building with AIs that don't know each other exists." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Essay</div>
+    <h1>The Go-Between, Revisited</h1>
+    <p class="dek">On building with AIs that don't know each other exists.</p>
+    <div class="meta">Software · Platform Economics</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>This week I added email notifications to Brief Work. It should have taken an afternoon. It took three days and touched six different AI systems: a code assistant, an email delivery service, a scheduling runner, a database, a deployment platform, and a monitoring routine. None of them knew the others existed.</p>
+
+    <p>I read about one-shot coding runs that go for hours and wonder what those people are building. It took me three days to add email notifications to an MVP.</p>
+
+    <p>I was the only integration point.</p>
+
+    <p>That's the thing nobody tells you about working with AI. You expect the hard part to be the intelligence. It turns out the hard part is the same as it always was: coordination. Context. Who knows what, and who is responsible for making sure it gets from one place to another.</p>
+
+    <p>The AIs I work with are capable — genuinely impressive at their specific tasks. The code assistant writes working code. The email service delivers reliably. The scheduler fires on time. Each one does exactly what it promises. What none of them can do is talk to each other. That job still belongs to the human in the room.</p>
+
+    <p>Graeber would recognize this immediately. The go-between is alive and well (Graeber's word for the indispensable middleman who may not be). He just switched industries.</p>
+
+    <p>Taleb would ask the harder question: who bears the risk? If a notification fails to send and a client misses a transaction, the AIs file no incident report. The code assistant doesn't lose sleep. The email service logs a bounce and moves on. The human operator — me — is the one who finds out three days later when the client sends a confused message.</p>
+
+    <p>Skin in the game still runs through the human.</p>
+
+    <p>I don't say this as a complaint. I find it clarifying. The conversation about AI replacing human judgment tends to skip over the problem of context. Each system I work with has a context window — a limit on what it can hold and reason about at once. The project as a whole has no such limit. Somebody has to hold the whole picture. For now, that's still the job.</p>
+
+    <p>The go-between who earns the commission is the one who stays when things go wrong. The AIs don't stay. They respond. There's a difference.</p>
+
+    <p>Brief Work takes ten percent. Whether that's rent-seeking or a real service is still the only question that matters. Building it taught me that the same question applies to the human in an AI workflow. Am I adding value or just sitting in the middle because the systems can't talk to each other yet?</p>
+
+    <p>I keep asking because the answer will change. The systems are getting smarter. The context windows are getting larger. Eventually they may not need me in the middle.</p>
+
+    <p>Until then, I show up.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
