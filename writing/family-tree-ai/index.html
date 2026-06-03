@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree Research With AI — Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/family-tree-ai/" />
+  <meta name="description" content="FindaGrave blocks bots. There is no API. What works is simpler: copy, paste, ask. A practical method for genealogy research with AI." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Software Essay</div>
+    <h1>Family Tree Research With AI</h1>
+    <p class="dek">FindaGrave blocks bots. There is no API. What works is simpler: copy, paste, ask.</p>
+    <div class="meta">Genealogy · AI · No API Required</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>The technique is simpler than you'd expect: copy, paste, ask.</p>
+
+    <p>FindaGrave blocks automated requests. There is no API you can call, no scraper that works reliably. What you can do is open a memorial page, select the family members section, paste it into a conversation with an AI, and ask what it means. That's the whole method. The AI doesn't need database access. It needs the data you hand it.</p>
+
+    <p>Here's what a session looks like. You paste a family member block — parents, spouse, siblings, children, dates, burial locations. The AI reads the relationships and starts doing the math: who could have told whom, how old was the grandfather when the story was passed, what does a birth in Clark County, Kentucky in 1820 tell you about the migration route. It connects dates to history without being asked. You paste the next page. The picture gets larger.</p>
+
+    <p>What the AI adds that you can't easily do yourself: it holds every fact from every paste simultaneously. When you find that your ancestor's wife was born in Pennsylvania in 1865 and died in Missouri in 1958, the AI immediately tells you she was alive when your father's uncle was forty-seven — old enough that he absolutely could have heard the story directly from her. You would have had to calculate that yourself.</p>
+
+    <p>What it can't do: fetch the pages for you, read gravestones, or know what your family said over dinner. You are still the one driving the back roads.</p>
+
+    <hr>
+
+    <p>In an afternoon I confirmed that my family name was always pronounced "Holly" in Missouri — not "Halley" — until my father's generation changed it, probably in high school or the Army. I found that a close friend's family, who refuse to cross into Kansas on principle, descend from a man born in Leavenworth, Kansas in 1874. The AI didn't find these things. I did, by going to FindaGrave. But it connected the dates and distances in a way that would have taken days to work out manually.</p>
+
+    <p>The output is a Mermaid diagram — a structured family tree in a markdown file that renders in most modern editors. It's not a database. It's a readable document you can update as new pastes come in.</p>
+
+    <p>The research stops where the records stop. Some people aren't on FindaGrave. Some burial locations are listed as "a field behind a church." Some family members died young and left no trace. The AI will tell you clearly when the trail goes cold, which is more than most genealogy tools will do.</p>
+
+    <p>Total cost: zero. No API key, no subscription, no account. A browser, a chat window, and an afternoon.</p>
+
+    <hr>
+
+    <p>Contact: <a href="mailto:alan@alanhalley.com">alan@alanhalley.com</a></p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Writing from Ilhéus, Brazil</span>
+  </footer>
+</body>
+</html>
