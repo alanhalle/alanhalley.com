@@ -1,5 +1,15 @@
 # Posts Log
 
+## 2026-06-05 — Full Moon
+
+Post: https://alanhalley.com/writing/full-moon/
+
+### Published
+
+Short memoir piece, ~150 words. Al Ditch and Alan borrow a canoe, paddle down the Missouri to a full moon party on an island, overshoot it, tip the canoe, corral the beer cans, dry out by someone else's bonfire, watch the animals go quiet. Don't remember how they got back to Rocheport. Al died January 18, 2026. Known him fifty years.
+
+---
+
 ## 2026-06-04 — My great-great-great-great-grandfather's travels
 
 Post: https://alanhalley.com/writing/henry-and-polly/
