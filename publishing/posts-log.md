@@ -1,5 +1,15 @@
 # Posts Log
 
+## 2026-06-06 — Less Than Two Dollars
+
+Post: https://alanhalley.com/writing/less-than-two-dollars/
+
+### Published
+
+Short memoir piece, ~350 words. Dwight Duke rides a Honda 750 from San Francisco to Brazil, gets arrested in Ilhéus for taking his own R$5 change from a gas station cash register, calls Alan from prison asking for cigarettes. Alan brings cigarettes (Dwight doesn't smoke), loose tobacco, picks up his belongings from the warden. Dwight declines help, takes referral from a prison acquaintance. Released, stays with Alan, tries to pay for hospitality — Alan refuses: "He had insulted me." Goes back to Salvador. Weeks later: photo from a hospital hallway, handcuffed to bed, broken leg, expired visa, deportation pending.
+
+---
+
 ## 2026-06-05 — Full Moon
 
 Post: https://alanhalley.com/writing/full-moon/
