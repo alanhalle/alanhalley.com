@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="720" height="380" fill="#0f1117"/>
+
+  <text x="360" y="30" text-anchor="middle" fill="#e8eaf0" font-size="18" font-weight="700">Why the gap needs to zigzag</text>
+
+  <!-- LEFT: straight gap -->
+  <g>
+    <text x="170" y="65" text-anchor="middle" fill="#8b90a0" font-size="14">Straight gap</text>
+
+    <rect x="60"  y="90" width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+    <rect x="150" y="90" width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+    <rect x="240" y="90" width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+
+    <line x1="20" y1="200" x2="330" y2="200" stroke="#ffd166" stroke-width="5"/>
+    <polygon points="345,200 325,190 325,210" fill="#ffd166"/>
+
+    <text x="170" y="345" text-anchor="middle" fill="#ffd166" font-size="15" font-weight="700">shoots right through</text>
+  </g>
+
+  <!-- RIGHT: staggered gap -->
+  <g>
+    <text x="550" y="65" text-anchor="middle" fill="#8b90a0" font-size="14">Staggered (stepped) gap</text>
+
+    <rect x="440" y="90"  width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+    <rect x="530" y="150" width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+    <rect x="620" y="210" width="70" height="220" fill="#3a3f4f" stroke="#565d70" stroke-width="1.5"/>
+
+    <line x1="400" y1="200" x2="490" y2="200" stroke="#ffd166" stroke-width="5"/>
+    <polygon points="505,200 485,190 485,210" fill="#ffd166"/>
+    <line x1="505" y1="200" x2="505" y2="200" stroke="#ffd166" stroke-width="5"/>
+
+    <circle cx="505" cy="200" r="11" fill="none" stroke="#e03c3c" stroke-width="3"/>
+    <line x1="497" y1="192" x2="513" y2="208" stroke="#e03c3c" stroke-width="3"/>
+    <line x1="513" y1="192" x2="497" y2="208" stroke="#e03c3c" stroke-width="3"/>
+
+    <text x="550" y="345" text-anchor="middle" fill="#e03c3c" font-size="15" font-weight="700">no clear path through</text>
+  </g>
+</svg>

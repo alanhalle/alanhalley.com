@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutron Streaming Through Gaps — Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/projects/starfire/" />
+  <meta name="description" content="A 1984 nuclear shielding study, redone in 2026 with modern open-source tools — explained without the physics." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    p, li {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    li { margin-bottom: 0.6rem; }
+    ul { padding-left: 1.4rem; margin-bottom: 1.4rem; }
+
+    .callout {
+      font-size: 1.15rem;
+      color: var(--text);
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.3rem;
+      max-width: 680px;
+      margin-bottom: 2rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    figure {
+      max-width: 680px;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    figure img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    figcaption {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/" aria-current="page">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Project</div>
+    <h1>What I've been doing: redoing a 1984 physics paper with modern tools</h1>
+    <p class="dek">A nuclear shielding study I co-wrote 40 years ago, redone with free software — explained without the physics degree.</p>
+    <div class="meta">Nuclear Physics · OpenMC · STARFIRE</div>
+    <a href="/projects/" class="back-link">Back to projects</a>
+  </div>
+
+  <article>
+    <div class="callout">I redid a nuclear physics study I co-wrote 40 years ago, using modern free software — and this time I could calculate the numbers that were too faint to measure back then.</div>
+
+    <h2>First, some basics</h2>
+
+    <p><strong>What's radiation, in this context?</strong> Not the glowing-green-goo kind from movies. Fusion reactors work by smashing hydrogen atoms together so hard they fuse — the same reaction that powers the sun — and that reaction throws off fast-moving neutrons. Those neutrons are the "radiation" here: they punch through things, heat them up, and over time make materials brittle or radioactive. You don't want them hitting people or delicate equipment.</p>
+
+    <p><strong>What's a tokamak?</strong> It's the leading design for a fusion power plant — a donut-shaped chamber that holds a ring of plasma (hydrogen gas heated to about 150 million °C) using magnetic fields, because nothing solid could touch something that hot and survive. STARFIRE, the design this study is based on, was a 1980s conceptual power-plant blueprint — never built, but detailed enough to do real engineering calculations against.</p>
+
+    <p><strong>What's a radiation shield, and why does it have gaps?</strong> Wrap the plasma ring in a thick jacket of steel and other materials, and most of those neutrons get absorbed before they reach anything they'd damage. But the shield can't be one seamless piece — it's built in sections, like panels, because the whole reactor heats up and the pieces need room to expand without cracking. Every seam between panels is a small gap. And a gap is a problem: neutrons stream through it far more easily than through solid shielding, like a draft slipping under a door. Wherever there's a gap, there's a hot spot of leakage behind it.</p>
+
+    <figure>
+      <img src="diagram1-tokamak.svg" alt="A tokamak, seen from above, showing the plasma ring, the surrounding shield built in sections, and radiation leaking through a gap between sections">
+      <figcaption>A tokamak, seen from above (simplified). The shield is built in sections with small gaps between them, and radiation leaks through wherever a gap lines up straight.</figcaption>
+    </figure>
+
+    <h2>The fix, and the question</h2>
+
+    <p>The standard fix is simple: don't leave the gap running straight through. Stagger it — offset each layer slightly from the one before, like the joints in a brick wall, so there's no straight line all the way through. A neutron trying to stream through the gap now has to turn a corner, and turning a corner usually means hitting something solid.</p>
+
+    <figure>
+      <img src="diagram2-gap-comparison.svg" alt="Comparison of a straight gap, where radiation shoots straight through, versus a staggered gap, where there is no clear path through">
+      <figcaption>Straight vs. staggered. A staggered gap removes the straight-line path, forcing radiation to scatter rather than stream through directly.</figcaption>
+    </figure>
+
+    <p>The obvious question a shield designer needs answered: how much does staggering the gap actually help? Back in 1984, using the computers of the era, I ran the calculation that answered that for the STARFIRE design, together with my thesis advisor, Bill Miller.</p>
+
+    <h2>Why redo it in 2026</h2>
+
+    <p>The 1984 calculation had a real limitation: the amounts of radiation that leak through even a well-staggered gap, or through the solid shield itself, are <em>tiny</em> — many decades below the source strength. Tiny enough that the computers of the time couldn't pin the number down; it was lost in statistical noise, like trying to hear a whisper in a noisy room. That gap in the data was never fully closed.</p>
+
+    <p>In 2026 I redid the whole study using OpenMC, a modern open-source nuclear physics code, with far better nuclear data than existed in 1984 — free, and the same tools working reactor physicists use today. And I added a technique called <strong>weight-window variance reduction</strong>, which is essentially a smarter way of aiming the simulation's computational effort at the rare events that matter, instead of spending it uniformly on billions of neutrons that never make it through. That let me finally calculate those faint, previously-unmeasurable numbers cleanly — for the first time, as far as I know, for this specific design.</p>
+
+    <p>I also built a small prediction tool (a "surrogate model") that, once trained on a batch of these calculations, can instantly estimate the leakage for a new gap shape without re-running the whole simulation — the kind of thing a shield designer could actually use day to day.</p>
+
+    <h2>The upshot</h2>
+
+    <p>A calculation that was at the ragged edge of what was possible in 1984 is now routine on a free laptop, and the whole thing — code, data, and the write-up — is public, so anyone can check it or build on it.</p>
+
+    <ul>
+      <li><strong>See the code and data:</strong> <a href="https://github.com/alanhalle/openmc-starfire" target="_blank" rel="noopener">github.com/alanhalle/openmc-starfire</a></li>
+      <li>The technical paper is still being finished — a link will go here once it's posted.</li>
+    </ul>
+
+    <hr>
+
+    <p style="color: var(--muted); font-size: 0.98rem;">Someday idea: with the right tools and enough time, this could make a nice short 3D animated video — a fly-through of the shield showing neutrons streaming through a straight gap versus scattering off a staggered one. Parked for now, not started.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Project page published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
