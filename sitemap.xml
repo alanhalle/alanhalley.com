@@ -16,12 +16,52 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alanhalley.com/projects/starfire/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://alanhalley.com/writing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://alanhalley.com/writing/airport-to-beach/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/a-veritable-island/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/doc/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://alanhalley.com/writing/easing-in/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/family-tree-ai/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/full-moon/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/henry-and-polly/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/less-than-two-dollars/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -31,7 +71,27 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://alanhalley.com/writing/nao-sei-nada/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://alanhalley.com/writing/one-person-operating-system/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/real-money-real-people/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/the-go-between/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alanhalley.com/writing/the-go-between-revisited/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
