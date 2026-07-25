@@ -1,5 +1,39 @@
 # Posts Log
 
+## 2026-07-25 — briefwork.io status update
+
+First post about briefwork.io since May 19 launch posts (over two months quiet).
+
+### X (Twitter) — posted
+> Two months ago Brief Work had one paid transaction. Still true, plus a few more since — real briefs, real money, no theater. I'm still building it, not running it.
+>
+> briefwork.io
+
+### LinkedIn — posted
+> Update on Brief Work (briefwork.io): it's a two-sided marketplace for short, well-defined expert gigs — one deliverable, no retainers, no agencies skimming both sides.
+>
+> Since launch, real briefs have gone live and real money has changed hands — including one I posted myself, paying $50 for a go-to-market plan for the platform itself. That's the kind of test I trust: I used my own product to solve my own problem, and it worked.
+>
+> I've spent 30+ years doing exactly this kind of work — one deliverable, one question, done — from dice.com in the 1990s to $40K on Upwork more recently. Brief Work is built from the buyer's and seller's side of that same table, minus the parts that never made sense: charging workers to bid, cover-letter theater, staffing firms working both sides.
+>
+> I keep building it. If you know someone who wants to run growth and operations on a live product with real transactions — or if you've got a short brief you need done — I'd like to hear from you.
+>
+> briefwork.io
+
+---
+
+## 2026-06-21 — briefwork.io operator search
+
+### Indie Hackers — posted
+Looking for an operator for briefwork.io — working marketplace, one paid transaction, builder wants to keep building, looking for someone to run it. Posted in Partner Up section.
+
+### X (Twitter) — posted
+> Built a marketplace for structured project briefs. Working, one paid transaction. I want to keep building the product. Looking for someone to run it.
+>
+> briefwork.io — DM or alan@alanhalley.com
+
+---
+
 ## 2026-06-06 — Less Than Two Dollars
 
 Post: https://alanhalley.com/writing/less-than-two-dollars/
