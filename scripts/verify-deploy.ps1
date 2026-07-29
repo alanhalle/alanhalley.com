@@ -23,6 +23,7 @@ $pages = @(
     @{ url = "/writing/my-florida-vacation/";         check = "Florida" }
     @{ url = "/about/";                               check = "Alan Halley" }
     @{ url = "/projects/";                            check = "Projects" }
+    @{ url = "/projects/starfire/";                    check = "STARFIRE" }
 )
 
 $pass = 0
