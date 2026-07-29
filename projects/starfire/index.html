@@ -227,11 +227,11 @@
 
     <p><strong>What's a tokamak?</strong> It's the leading design for a fusion power plant — a donut-shaped chamber that holds a ring of plasma (hydrogen gas heated to about 150 million °C) using magnetic fields, because nothing solid could touch something that hot and survive. STARFIRE, the design this study is based on, was a 1980s conceptual power-plant blueprint — never built, but detailed enough to do real engineering calculations against.</p>
 
-    <p><strong>What's a radiation shield, and why does it have gaps?</strong> Wrap the plasma ring in a thick jacket of steel and other materials, and most of those neutrons get absorbed before they reach anything they'd damage. But the shield can't be one seamless piece — it's built in sections, like panels, because the whole reactor heats up and the pieces need room to expand without cracking. Every seam between panels is a small gap. And a gap is a problem: neutrons stream through it far more easily than through solid shielding, like a draft slipping under a door. Wherever there's a gap, there's a hot spot of leakage behind it.</p>
+    <p><strong>What's a radiation shield, and why does it have gaps?</strong> Wrap the plasma ring in a thick jacket of steel and other materials, and most of those neutrons get absorbed before they reach anything they'd damage. But the shield can't be one seamless piece — it's built in sections, like panels, because it has to be assembled from pieces in the first place, and those pieces have to come back out again for maintenance. Every seam between panels is a small gap. And a gap is a problem: neutrons stream through it far more easily than through solid shielding, like a draft slipping under a door. Wherever there's a gap, there's a hot spot of leakage behind it.</p>
 
     <figure>
-      <img src="diagram1-tokamak.svg" alt="A tokamak, seen from above, showing the plasma ring, the surrounding shield built in sections, and radiation leaking through a gap between sections">
-      <figcaption>A tokamak, seen from above (simplified). The shield is built in sections with small gaps between them, and radiation leaks through wherever a gap lines up straight.</figcaption>
+      <img src="tokamak-cutaway.png" alt="A simplified tokamak shown as a cutaway three-dimensional ring. A glowing orange plasma torus runs inside a thick grey shield built from wedge-shaped sectors. One sector has been removed and set to one side, exposing the interior, and a seam between two sectors is highlighted as the gap that neutrons stream through.">
+      <figcaption>A tokamak, simplified. The plasma — hydrogen heated to about 150 million °C — runs as a ring inside a thick shield of steel and other materials that absorbs most of the neutrons. The shield is built from sectors that lift out for maintenance (one is shown removed), and every seam between sectors is a gap neutrons can stream through.</figcaption>
     </figure>
 
     <h2>The fix, and the question</h2>
@@ -249,22 +249,18 @@
 
     <p>The 1984 calculation had a real limitation: the amounts of radiation that leak through even a well-staggered gap, or through the solid shield itself, are <em>tiny</em> — many decades below the source strength. Tiny enough that the computers of the time couldn't pin the number down; it was lost in statistical noise, like trying to hear a whisper in a noisy room. That gap in the data was never fully closed.</p>
 
-    <p>In 2026 I redid the whole study using OpenMC, a modern open-source nuclear physics code, with far better nuclear data than existed in 1984 — free, and the same tools working reactor physicists use today. And I added a technique called <strong>weight-window variance reduction</strong>, which is essentially a smarter way of aiming the simulation's computational effort at the rare events that matter, instead of spending it uniformly on billions of neutrons that never make it through. That let me finally calculate those faint, previously-unmeasurable numbers cleanly — for the first time, as far as I know, for this specific design.</p>
-
-    <p>I also built a small prediction tool (a "surrogate model") that, once trained on a batch of these calculations, can instantly estimate the leakage for a new gap shape without re-running the whole simulation — the kind of thing a shield designer could actually use day to day.</p>
+    <p>In 2026 I redid the whole study using OpenMC, a modern open-source nuclear physics code, with far better nuclear data than existed in 1984 — the same tools working reactor physicists use today. And I added a technique called <strong>weight-window variance reduction</strong>, which is essentially a smarter way of aiming the simulation's computational effort at the rare events that matter, instead of spending it uniformly on billions of neutrons that never make it through. That let me finally calculate those faint, previously-unmeasurable numbers cleanly — for the first time, as far as I know, for this specific design.</p>
 
     <h2>The upshot</h2>
 
-    <p>A calculation that was at the ragged edge of what was possible in 1984 is now routine on an ordinary laptop, using free software (the laptop itself isn't free, but the tools are) — and the whole thing, code, data, and write-up, is public, so anyone can check it or build on it.</p>
+    <p>A calculation that was at the ragged edge of what was possible in 1984 now runs on a free tier of Google Colab, using OpenMC — free software on free hardware — and the whole thing, code, data, and write-up, is public, so anyone can check it or build on it.</p>
 
     <ul>
       <li><strong>See the code and data:</strong> <a href="https://github.com/alanhalle/openmc-starfire" target="_blank" rel="noopener">github.com/alanhalle/openmc-starfire</a></li>
-      <li>The technical paper is still being finished — a link will go here once it's posted.</li>
+      <li><strong>Citable archive (Zenodo):</strong> <a href="https://doi.org/10.5281/zenodo.20788782" target="_blank" rel="noopener">doi.org/10.5281/zenodo.20788782</a></li>
+      <li><strong>Paper:</strong> submitted to <em>Annals of Nuclear Energy</em>, 2026.</li>
     </ul>
 
-    <hr>
-
-    <p style="color: var(--muted); font-size: 0.98rem;">Someday idea: with the right tools and enough time, this could make a nice short 3D animated video — a fly-through of the shield showing neutrons streaming through a straight gap versus scattering off a staggered one. Parked for now, not started.</p>
   </article>
 
   <footer>
