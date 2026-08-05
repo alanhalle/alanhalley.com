@@ -1,5 +1,39 @@
 # Posts Log
 
+## 2026-08-05 — TrikeScore proof of concept launch
+
+First posts for trikescore.com — proof of concept, not a product. Hand-mapped trike routes in Ilhéus (Pontal to Cabana Guarany) into OpenStreetMap, rendered live via CyclOSM. Reddit (r/openstreetmap, r/bicycling or r/urbanplanning) held for a future day — not posted today.
+
+### X (Twitter) — posted
+> Walk Score exists. Bike Score exists. Nothing scores whether a trike can get around — trikes fail where bikes don't: no curb climbing, grade kills you, wind is a routing constraint not weather.
+>
+> Mapped my own routes in Ilhéus into OSM to test it. POC: trikescore.com
+
+### LinkedIn — posted
+> I use an adult tricycle to get around in Ilhéus, Brazil. It turns out trikes fail differently than bikes: no curb climbing, grade sensitivity, and wind is a real routing constraint — a bridge that's fine with the wind at your back can be a non-starter riding the other direction.
+>
+> There's no existing tool that scores this — Walk Score and Bike Score don't capture it. So I started mapping my own routes by hand into OpenStreetMap, tagging the details that actually matter (curb type, incline, surface), and it's live at trikescore.com.
+>
+> This is a proof of concept, not a finished product — no scoring algorithm yet, one city's worth of data. But the method works, and I think there's a real gap here for trike riders, mobility scooter users, and anyone doing accessibility mapping.
+>
+> If you work in urban accessibility, OpenStreetMap, or adaptive mobility and this is interesting, I'd like to talk.
+
+### OSM Community Forum — posted
+> Subject: TrikeScore — mapping adult-trike accessibility (curb/grade/wind), Ilhéus pilot
+>
+> I ride an adult tricycle in Ilhéus, Bahia, Brazil, and started hand-mapping my daily routes in OSM to test an idea: a Walk-Score-style accessibility score for trikes, which have different failure modes than bikes (no curb climbing, grade sensitivity, wind exposure as a directional constraint).
+>
+> So far: a route=bicycle/network=lcn relation covering my daily routes, tagged with kerb=, incline=, segregated=, surface= where I could determine them. Rendered live via CyclOSM: trikescore.com
+>
+> This overlaps a lot with wheelchair/mobility accessibility mapping — same tags, similar constraints. Curious if anyone here has done similar work, or has thoughts on where this schema breaks down at scale. No scoring algorithm yet — just validating that the mapping approach holds up.
+
+### Hacker News (Show HN) — posted
+> Title: Show HN: TrikeScore – proof of concept for trike-specific route accessibility (OSM-based)
+>
+> Walk Score and Bike Score exist; nothing scores whether an adult tricycle can get around a place, and trikes fail differently than bikes — can't hop curbs, grade-sensitive, and wind is a real routing constraint (a slope with the wind at your back vs. against it can flip from ridable to not). I hand-mapped my own trike routes in Ilhéus, Brazil into OpenStreetMap with the relevant tags (kerb type, incline, segregation) and rendered them via CyclOSM. No scoring algorithm yet — this is just proving the mapping method works. trikescore.com
+
+---
+
 ## 2026-07-25 — briefwork.io status update
 
 First post about briefwork.io since May 19 launch posts (over two months quiet).
