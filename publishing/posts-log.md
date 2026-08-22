@@ -6,16 +6,16 @@ Published https://alanhalley.com/writing/convincing-is-not-correct/ — on givin
 
 Deliberately holds back the benchmark's actual results (pass rates, the gate-vs-physics split, the failure taxonomy) — those go in the paper, venue not yet chosen. The essay argues the method and teases the findings in one line.
 
-Social not yet posted. Drafts below, ready to go.
+Posted to X and LinkedIn 2026-08-22.
 
-### X (Twitter) — draft, not posted
+### X (Twitter) — posted
 > I gave an AI a physics problem 30 times and ran every answer.
 >
 > Four wrote out a complete, correct-looking setup and never ran the calculation. No error. No output.
 >
 > Reading code tells you if it's convincing. Running it tells you if it's right.
 
-### LinkedIn — draft, not posted
+### LinkedIn — posted
 > Forty years ago someone calculated how neutrons leak through the gaps in fusion reactor shielding. Earlier this year I reproduced that calculation, which left me with something useful: a set of physics problems where I already know the right answer.
 >
 > So I gave the problems to an AI. Thirty times. Then I ran every program it wrote and checked the number against the one I knew was correct.
