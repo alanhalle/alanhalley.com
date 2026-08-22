@@ -7,6 +7,7 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = "Alan Halley" }
     @{ url = "/writing/";                             check = "Writing" }
+    @{ url = "/writing/convincing-is-not-correct/";    check = "Verify the artifact" }
     @{ url = "/writing/less-than-two-dollars/";         check = "Flagrante" }
     @{ url = "/writing/full-moon/";                    check = "Rocheport" }
     @{ url = "/writing/henry-and-polly/";             check = "Bee Trace" }

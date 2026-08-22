@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convincing Is Not Correct - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/convincing-is-not-correct/" />
+  <meta name="description" content="Convincing Is Not Correct — I gave an AI thirty physics problems and ran every answer. Four of them never ran the calculation at all." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    em { font-style: italic; }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Essay</div>
+    <h1>Convincing Is Not Correct</h1>
+    <p class="dek">I gave an AI thirty physics problems and ran every answer. Four of them never ran the calculation at all.</p>
+    <div class="meta">Software · AI Evaluation</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>Four of the programs were perfect. Materials defined, geometry laid out, source spectrum built, tallies configured. Everything a reviewer would check, correct. Then they stopped.</p>
+
+    <p>No error. No output. Exit code zero, which in computing means "everything went fine." They had written out a complete setup for a calculation and never run the calculation. It's like watching someone lay every tool out on the bench, in order, and then go home.</p>
+
+    <p>If I had read that code instead of running it, I would have marked all four as passes.</p>
+
+    <h2>What I was actually doing</h2>
+
+    <p>Forty years ago there was a calculation about neutrons leaking through gaps in fusion reactor shielding. Radiation doesn't only go through walls; it also finds the seams, the maintenance ports, the places where two slabs of steel don't quite meet. That's the whole problem. Earlier this year I reproduced that 1984 study with modern software, which means I now have something rare: a set of physics problems where I know the right answer.</p>
+
+    <p>So I gave the problems to an AI. Thirty times. Five problems, easy to hard, several attempts each, no hints and no second chances. Then I ran every single program it wrote and compared the number that came out against the number I already knew was correct.</p>
+
+    <p>That last part is the whole point, and it's the part almost nobody does.</p>
+
+    <h2>Reading is not running</h2>
+
+    <p>When people ask whether AI can do technical work, they usually answer by looking. An expert reads the output and decides whether it looks right. That's a real test of something — it tells you whether the work is <em>convincing</em>. It does not tell you whether it's <em>correct</em>.</p>
+
+    <p>Those come apart more often than you'd think. Code that reads beautifully can be wrong in one character. Code that looks clumsy can be exactly right. And code can be complete, valid, and entirely inert, like my four.</p>
+
+    <p>Running it collapses the question. Either the program produces the number or it doesn't. Either the number matches the physics or it doesn't. There's no judgment call and nothing to argue about, which is unusual and worth appreciating when you find it.</p>
+
+    <p>I'm writing the results up properly, so I'll keep the details for the paper. One thing I'll say now: almost none of the failures were about physics. The AI understood the radiation fine. It got beaten by the fine print of one software library — a keyword that doesn't exist, a value outside an allowed list, two functions that each work but not together. The equivalent of knowing exactly what you want to say and misspelling one word so the letter comes back.</p>
+
+    <p>That's a much more fixable problem than "it doesn't understand physics." It's also much harder to notice, because every failure of that kind is a line of code that reads perfectly well.</p>
+
+    <h2>Then I checked my own instrument</h2>
+
+    <p>Here's the part I didn't expect to write.</p>
+
+    <p>To score thirty programs automatically, I had to build a scoring harness — code that decides whether a run passed. And that code had bugs. Nineteen of them, by the time I stopped counting.</p>
+
+    <p>Some were embarrassing. One statistic I used to check whether a result was flat <em>failed</em> three perfectly flat results, and the giveaway was that the number changed when I ran more particles — a real physical effect doesn't do that. Another compared a position I only knew to within five centimeters against bins half a centimeter wide, which is like grading a dart throw to the millimeter when you were standing across the room. Fixing that one turned two failures into passes on data I had already collected. Nothing was re-run. The answers had been right the whole time; my ruler was wrong.</p>
+
+    <p>Nine of the nineteen I caught before they produced a wrong number. The rest I caught because a number came out wrong and I went looking. Zero of them — none — I found by reading over my own specifications and rubric, which I did several times, carefully, convinced they were fine.</p>
+
+    <p>The same week, two more. A routine command committed a file that something had silently reverted, and the commit reported success. And I found a note in my own records, written months ago, stating a confirmed cause for something, with a quotation attributed to a real person — that I had never confirmed and that the person, as far as I can tell, never said. It had been sitting there long enough that it was used to tell me my own memory of the events was wrong.</p>
+
+    <p>Three different systems. One failure. Every time, something reported success and I believed the report instead of looking at what it produced.</p>
+
+    <h2>The short version</h2>
+
+    <p>Verify the artifact, not the operation.</p>
+
+    <p>The build succeeded, so the library must be good. The commit went through, so the file must be saved. The program ran, so the answer must be there. The code reads well, so it must be right.</p>
+
+    <p>None of those follow. They just feel like they do, and checking is nearly always cheaper than being wrong — a few dollars and an afternoon, in my case, to find out that four immaculate programs had done precisely nothing.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>

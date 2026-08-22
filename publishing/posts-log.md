@@ -1,5 +1,34 @@
 # Posts Log
 
+## 2026-08-22 — Essay: Convincing Is Not Correct
+
+Published https://alanhalley.com/writing/convincing-is-not-correct/ — on giving an AI thirty OpenMC shielding problems, running every answer against a known reference, and then finding nineteen bugs in my own scoring harness. Theme: verify the artifact, not the operation.
+
+Deliberately holds back the benchmark's actual results (pass rates, the gate-vs-physics split, the failure taxonomy) — those go in the paper, venue not yet chosen. The essay argues the method and teases the findings in one line.
+
+Social not yet posted. Drafts below, ready to go.
+
+### X (Twitter) — draft, not posted
+> I gave an AI a physics problem 30 times and ran every answer.
+>
+> Four wrote out a complete, correct-looking setup and never ran the calculation. No error. No output.
+>
+> Reading code tells you if it's convincing. Running it tells you if it's right.
+
+### LinkedIn — draft, not posted
+> Forty years ago someone calculated how neutrons leak through the gaps in fusion reactor shielding. Earlier this year I reproduced that calculation, which left me with something useful: a set of physics problems where I already know the right answer.
+>
+> So I gave the problems to an AI. Thirty times. Then I ran every program it wrote and checked the number against the one I knew was correct.
+>
+> Four of those programs defined everything perfectly and then never ran the calculation. Exit code zero. No error, no output, nothing. If I had reviewed that code instead of executing it, I'd have passed all four.
+>
+> Most claims about AI doing technical work are settled by an expert reading the output. That tells you whether the work is convincing. It does not tell you whether it's correct.
+>
+> Then I checked my own scoring code and found nineteen bugs in it. Zero of them by re-reading my own specifications.
+
+### OpenMC Discourse — do not post as an announcement
+Checked 2026-08-22: forum is alive but quiet (14 topics / 64 posts / 110 active users in 30 days). Alan's two prior posts there — Jul 7 and Aug 6, both announcing the streaming reproduction and asking for a technical read — have **zero replies** between them. Threads that pose a specific answerable problem do get replies; announcements don't. Better vehicle for the benchmark's API findings is a GitHub issue on `openmc-dev/openmc`: `openmc.run()` returning `None`, and `add_s_alpha_beta` + `mix_materials` raising `NotImplementedError` undocumented.
+
 ## 2026-08-05 — TrikeScore proof of concept launch
 
 First posts for trikescore.com — proof of concept, not a product. Hand-mapped trike routes in Ilhéus (Pontal to Cabana Guarany) into OpenStreetMap, rendered live via CyclOSM. Reddit (r/openstreetmap, r/bicycling or r/urbanplanning) held for a future day — not posted today.
