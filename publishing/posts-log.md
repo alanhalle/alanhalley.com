@@ -1,5 +1,11 @@
 # Posts Log
 
+## 2026-09-06 — Essay: Working From Home Since 1975
+
+Published https://alanhalley.com/writing/working-from-home-since-1975/ — two engineering degrees barely used directly, fifty years of remote work across nuclear engineering, IT consulting/PM, and mobile app development, and this year's OpenMC reproduction of the 1984 thesis as the closing beat. General-audience version (originally drafted for a Mizzou Alumni Association newsletter pitch, then redrafted to drop MU-specific framing).
+
+Not yet posted to social — no X/LinkedIn drafts written for this one.
+
 ## 2026-08-22 — Essay: Convincing Is Not Correct
 
 Published https://alanhalley.com/writing/convincing-is-not-correct/ — on giving an AI thirty OpenMC shielding problems, running every answer against a known reference, and then finding nineteen bugs in my own scoring harness. Theme: verify the artifact, not the operation.

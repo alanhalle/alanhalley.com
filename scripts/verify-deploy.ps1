@@ -8,6 +8,7 @@ $pages = @(
     @{ url = "/";                                     check = "Alan Halley" }
     @{ url = "/writing/";                             check = "Writing" }
     @{ url = "/writing/convincing-is-not-correct/";    check = "Verify the artifact" }
+    @{ url = "/writing/working-from-home-since-1975/"; check = "recreating that hallway" }
     @{ url = "/writing/less-than-two-dollars/";         check = "Flagrante" }
     @{ url = "/writing/full-moon/";                    check = "Rocheport" }
     @{ url = "/writing/henry-and-polly/";             check = "Bee Trace" }
