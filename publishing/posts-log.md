@@ -1,5 +1,100 @@
 # Posts Log
 
+## 2026-09-06 — Gig launch: MVP, Lean Canvas, App Concept (Fiverr + Upwork Projects)
+
+Three gigs shipped live today, each with a matching Fiverr gig and Upwork Project: **MVP** (working, clickable prototype), **Lean Canvas** (structured strategy doc, problem/solution/segments), **App Concept** (early clickable concept/demo before committing to a full MVP build). Not yet promoted anywhere.
+
+**Schedule — spaced so Fiverr and Upwork versions of the same gig don't land the same day, one gig per week:**
+
+| Date | Gig | Platform | Channels |
+|---|---|---|---|
+| Mon Sep 8 | MVP | Fiverr | X + LinkedIn |
+| Thu Sep 11 | MVP | Upwork | X + LinkedIn |
+| Mon Sep 15 | Lean Canvas | Fiverr | X + LinkedIn |
+| Thu Sep 18 | Lean Canvas | Upwork | X + LinkedIn |
+| Mon Sep 22 | App Concept | Fiverr | X + LinkedIn |
+| Thu Sep 25 | App Concept | Upwork | X + LinkedIn |
+
+Fill in `[link]` and `[price]` placeholders before posting — exact gig pricing/turnaround wasn't confirmed when these were drafted.
+
+### Mon Sep 8 — MVP (Fiverr)
+
+**X:**
+> Building an MVP is expensive and slow when you don't know yet if the idea works. I use AI-assisted development to hand you a working, clickable prototype — not a mockup, something you can actually test and show investors. Starting at [price].
+>
+> [link]
+
+**LinkedIn:**
+> I've shipped a dozen+ software prototypes this year using AI-assisted development — marketplaces, tourist apps, decision tools, data visualizations, all live. Now that's a gig: a working MVP, built fast, that you can click through, test with real users, and put in front of investors before committing to a full build.
+>
+> 30+ years in software development and project management (PMP certified), 70+ projects managed across EMC, Boeing, Los Alamos, Dell, and startups along the way.
+>
+> Live on Fiverr: [link]
+
+### Thu Sep 11 — MVP (Upwork Project)
+
+**X:**
+> Same MVP offer, Upwork side: a working, clickable prototype, AI-assisted build, fast turnaround — not a slide deck, something you can actually test.
+>
+> [link]
+
+**LinkedIn:**
+> Also listed as an Upwork Project now: a fixed-scope MVP build, same approach as the Fiverr gig — AI-assisted development, working prototype in [turnaround], not a mockup.
+>
+> [link]
+
+### Mon Sep 15 — Lean Canvas (Fiverr)
+
+**X:**
+> Before you build anything, you need to know what you're actually building and for whom. I'll turn your idea into a sharp, specific Lean Canvas — problem, solution, customer segments, the works — not generic filler.
+>
+> [link]
+
+**LinkedIn:**
+> A Lean Canvas is supposed to force clarity before you spend money building something. Most of the ones I've seen are generic enough to describe five different businesses. I write them specific — the assumptions that would actually kill the idea if they're wrong, named directly, not softened.
+>
+> 30+ years scoping and managing software projects informs how I read a business idea, not just how I format a canvas.
+>
+> Live on Fiverr: [link]
+
+### Thu Sep 18 — Lean Canvas (Upwork Project)
+
+**X:**
+> Same Lean Canvas offer, now on Upwork: a sharp, specific one-pager, not generic startup-template filler.
+>
+> [link]
+
+**LinkedIn:**
+> Also listed as an Upwork Project: a fixed-scope Lean Canvas, delivered in [turnaround]. Same approach as the Fiverr gig — specific enough to be wrong, not vague enough to be safe.
+>
+> [link]
+
+### Mon Sep 22 — App Concept (Fiverr)
+
+**X:**
+> Not ready for a full MVP build yet? I'll turn your app idea into a clickable concept — something to react to, test on people, and refine before you commit real money to development.
+>
+> [link]
+
+**LinkedIn:**
+> There's a gap between "I have an idea" and "I'm ready to pay for an MVP." That gap is where most ideas die from vagueness, not from being bad. An App Concept gig fills it: a clickable, reactable demo of your idea, fast, so you know what you're actually building before you commit to building it.
+>
+> Live on Fiverr: [link]
+
+### Thu Sep 25 — App Concept (Upwork Project)
+
+**X:**
+> Same App Concept offer, Upwork side: a clickable demo of your idea before you commit to a full MVP build.
+>
+> [link]
+
+**LinkedIn:**
+> Also listed as an Upwork Project: a fixed-scope App Concept demo, delivered in [turnaround] — the step between an idea and a real MVP commitment.
+>
+> [link]
+
+---
+
 ## 2026-09-06 — Essay: Working From Home Since 1975
 
 Published https://alanhalley.com/writing/working-from-home-since-1975/ — two engineering degrees barely used directly, fifty years of remote work across nuclear engineering, IT consulting/PM, and mobile app development, and this year's OpenMC reproduction of the 1984 thesis as the closing beat. General-audience version (originally drafted for a Mizzou Alumni Association newsletter pitch, then redrafted to drop MU-specific framing).
