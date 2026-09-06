@@ -4,7 +4,23 @@
 
 Published https://alanhalley.com/writing/working-from-home-since-1975/ — two engineering degrees barely used directly, fifty years of remote work across nuclear engineering, IT consulting/PM, and mobile app development, and this year's OpenMC reproduction of the 1984 thesis as the closing beat. General-audience version (originally drafted for a Mizzou Alumni Association newsletter pitch, then redrafted to drop MU-specific framing).
 
-Not yet posted to social — no X/LinkedIn drafts written for this one.
+**Drafted, not yet posted:**
+
+### X (Twitter) — drafted, not posted
+> Two engineering degrees. I've barely used either one directly.
+>
+> What they gave me was credibility in a field I never trained for — software — and a career that's been remote since 1975, before anyone called it that.
+>
+> alanhalley.com/writing/working-from-home-since-1975/
+
+### LinkedIn — drafted, not posted
+> I have two engineering degrees — a BSME in 1975, an MSNE in 1984 — and I worked as a nuclear engineer for less than a year. What those degrees actually got me was credibility in a field I never formally trained for: software. I've never fully understood why "nuclear engineer" opens doors in IT that a computer science degree doesn't.
+>
+> My first job, in 1975, was remote before anyone called it that. Fifty years later — nuclear engineering, database consulting, IT project management at a string of large organizations, sixteen years of mobile app development, and now AI-assisted software from a beach in Brazil — the common thread was never the technology. It was working with people on every continent, almost entirely without meeting most of them, decades before "remote work" was a phrase anyone needed.
+>
+> This year I went back to the actual physics: I reproduced my own 1984 master's thesis on neutron shielding using OpenMC, resolving a limitation the original 1986 peer review had flagged as unsolved. The degree was never really about doing nuclear engineering for a living — it was about learning to think in a way that turned out to be useful everywhere else.
+>
+> alanhalley.com/writing/working-from-home-since-1975/
 
 ## 2026-08-22 — Essay: Convincing Is Not Correct
 
