@@ -310,6 +310,28 @@ Article: https://alanhalley.com/writing/airport-to-beach/
 
 ---
 
+## 2026-09-06 — "One File, One Vendor" essay published
+
+**URL:** https://alanhalley.com/writing/one-file-one-vendor/
+**Type:** Software Essay
+
+darthvader.mba as the case study: a site that takes payments, stores data in D1,
+sends email, and gates an admin page — all as one `worker.js` on Cloudflare, no
+framework, no build step. Names the costs honestly: total lock-in, single-vendor
+outage takes everything at once, D1 is young, no types/tests (cites the real bug
+where checkout carried no metadata and paid votes never reached the leaderboard),
+template-literal HTML doesn't scale. Ends with the three thresholds that would
+change the decision.
+
+**Not yet posted anywhere.** Candidate channels when DVMBA's launch settles:
+- **Indie Hackers** — this is the angle already identified in
+  `workspace/darthvader-mba-channel-variants.md`: lead with the build, not the product.
+- **Hacker News** — a link to the essay is a different submission from the Show HN
+  (which was auto-killed Sep 3). Wait until that's resolved before trying again.
+- **LinkedIn** — the *building* of DVMBA is fine here even though the product isn't.
+
+---
+
 ## Essay Candidates — Not Yet Written
 
 - **Partially Ameliorated** — The second brain journey: Notion → Obsidian → Emergent → R$700 OpenClaw → Nimbalyst → hook writing to empty folder for months. Draft at `workspace/second-brain-essay-draft.md`. Theme: Computing Journey.

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One File, One Vendor - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/one-file-one-vendor/" />
+  <meta name="description" content="A site that takes money, stores data, and sends email, running as one JavaScript file on one company's infrastructure. What that buys and what it costs." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow,
+    .meta,
+    .back-link,
+    h1,
+    h2,
+    ul {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      letter-spacing: -0.01em;
+      margin-top: 2.75rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .dek {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 690px;
+    }
+
+    ul {
+      max-width: 690px;
+      margin: 0 0 1.4rem 1.25rem;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    li { margin-bottom: 0.5rem; }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.1em 0.4em;
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Software Essay</div>
+    <h1>One File, One Vendor</h1>
+    <p class="dek">A site that takes money, stores data, and sends email — running as one JavaScript file on one company's infrastructure.</p>
+    <div class="meta">Software | Essay</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>I built <a href="https://darthvader.mba">darthvader.mba</a> a few months ago. It's a satirical leaderboard for companies that change the terms after you've bought in — you nominate one for $20, the public votes at a dollar a vote, and half of every fee goes to the EFF.</p>
+
+    <p>The joke is the product. But the checkout is real, and that means the thing has to actually work.</p>
+
+    <p>It takes payments. It stores nominations and votes in a database. It sends me email when a nomination lands. It has a private admin page where I approve or reject, and rejections get refunded. It renders a live leaderboard, a page per nominee, a sitemap, and a terms page nobody will read.</p>
+
+    <p>All of that is one JavaScript file. Sixteen files in the repository, and one of them is the site.</p>
+
+    <h2>What it runs on</h2>
+
+    <p>Everything is Cloudflare except Stripe and GitHub.</p>
+
+    <ul>
+      <li>The domain is registered at Cloudflare and its DNS is there.</li>
+      <li>A single Worker renders every page as HTML at the edge — leaderboard, voting, nominations, nominee pages, admin.</li>
+      <li>A D1 database holds nominees, votes, and nominations. SQLite, at the edge, bound directly to the Worker.</li>
+      <li>Static assets — homepage, terms, favicon, social card — come out of the same Worker through an assets binding.</li>
+      <li>Email Routing handles inbound. An outbound binding sends me the nomination alerts.</li>
+      <li>TLS, CDN, and caching are just there.</li>
+    </ul>
+
+    <p>Stripe is the only third party in the request path, and only on the payment step. If Stripe goes down, the leaderboard and the nominee pages keep serving. GitHub holds the source but isn't in the path at all — I deploy with <code>wrangler deploy</code> from my own machine, not through a pipeline.</p>
+
+    <p>There is no framework. No build step. No bundler, no transpiler, no CI. I edit <code>worker.js</code>, type one command, and about twenty seconds later it's live in every Cloudflare data center.</p>
+
+    <h2>Why this is possible now</h2>
+
+    <p>Five years ago this same site would have been a static host, a separate API server, a managed Postgres somewhere, a transactional email vendor, and a deploy pipeline to tie them together. Five services, five bills, five sets of credentials, and a build that takes four minutes.</p>
+
+    <p>What changed is that the edge runtime got a database and a file server attached to it. SQLite at the edge is the piece that mattered. Once your data lives next to your compute and both live at the CDN, the middle tier stops having a reason to exist.</p>
+
+    <p>I've been doing this a long time. I don't often get to delete four layers.</p>
+
+    <h2>What it costs</h2>
+
+    <p>This is the part the enthusiastic version of this essay leaves out.</p>
+
+    <p><strong>It's total lock-in.</strong> Not "we use some Cloudflare products." Every layer — registrar, DNS, compute, database, storage, email — is one company. Moving off isn't a migration, it's a rewrite. I chose that with my eyes open, but I chose it.</p>
+
+    <p><strong>One outage takes everything.</strong> Not degraded. Gone. The site, the database, the admin page, and the email that would tell me something's wrong all fail together, and they fail through the same DNS I'd need to route around them. There is no partial failure mode because there are no parts.</p>
+
+    <p><strong>D1 is young.</strong> It's SQLite with a good story around it, and the story is still being written. I'm storing votes people paid for. That's a real bet on a product that hasn't been through many years of other people's disasters yet.</p>
+
+    <p><strong>No build step means no safety net.</strong> No types, no test harness, nothing between me and production. I have shipped bugs to this site that took real money and did nothing with it — a checkout that carried no metadata, so people's paid votes were charged and never reached the leaderboard. I found it because I looked, not because anything told me. On a site handling other people's payments, "I found it because I looked" is not a methodology.</p>
+
+    <p><strong>The HTML lives in template literals.</strong> A thousand lines of it. At this size it's fine and I'd argue it's clearer than the alternative. At ten times this size it would be indefensible.</p>
+
+    <h2>Where I'd draw the line</h2>
+
+    <p>For a site this size the trade is right. The lock-in is real, but the alternative is a build pipeline I'd spend my time maintaining instead of writing the thing the site is actually for. I'm 75 and semi-retired. Every hour I spend on infrastructure is an hour I didn't spend on the work.</p>
+
+    <p>I'd change my mind at three points. If someone else had to maintain it, it needs types. If the money got large enough that a day of downtime mattered, it needs a second vendor somewhere in the stack. And if the file passed a few thousand lines, the template literals have to go.</p>
+
+    <p>None of those are true yet. When one becomes true, I'll do the work then rather than paying for it now against a future that may not arrive.</p>
+
+    <p>That's the whole argument. Build the smallest thing that's actually real, know exactly what you traded away, and write the threshold down so you notice when you cross it.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
