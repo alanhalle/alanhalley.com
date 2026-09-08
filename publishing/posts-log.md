@@ -4,14 +4,14 @@
 
 New project page: `/projects/sapetinga-restaurant/`. A concept-with-numbers look
 at a small waterfront restaurant on a real 250 m² lot in Ilhéus — the trapezoidal
-shape from the 45-degree street, the ~128 m² buildable floor, two AI concept
-renders (interior generated from the scale plan so the dimensions carry through;
-exterior at sunset), a numbers table, and the parking question that decides
-whether it could be real. Card added under Emerging Bets on the projects index.
+shape from the 45-degree street, the ~128 m² buildable floor, an AI concept
+render (interior, generated from the scale plan so the dimensions carry
+through), a numbers table, and the parking question that decides whether it
+could be real. Card added under Emerging Bets on the projects index.
 
-The interactive 360 walkaround was cut from v1 — Blockade Labs Skybox now
-paywalls the equirectangular export. Section can be added later (free
-partial-pano via Gemini + Pannellum, or a one-month paid Skybox export).
+Cut from v1: the interactive 360 walkaround (Blockade Labs Skybox paywalls the
+equirectangular export) and the exterior render (Gemini kept glazing the wrong
+walls). Both can be added later.
 
 **Not yet posted anywhere.** It's a musing dressed up nicely, not a product —
 possible fit for a future "concept design with AI" essay rather than a standalone
