@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Restaurant on a Hard Little Lot — Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/projects/sapetinga-restaurant/" />
+  <meta name="description" content="A 250 m2 wedge of land in Ilheus, a 45-degree street, and a bay view — worked up as a concept with enough numbers to know whether to keep going. A pre-feasibility study." />
+  <meta property="og:title" content="A Restaurant on a Hard Little Lot" />
+  <meta property="og:description" content="A 250 m2 wedge of land in Ilheus, a 45-degree street, and a bay view — a concept with numbers." />
+  <meta property="og:image" content="https://alanhalley.com/projects/sapetinga-restaurant/interior.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .nav-links a { color: var(--muted); font-size: 0.9rem; }
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] { color: var(--accent); text-decoration: none; }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header { padding-top: 4.5rem; padding-bottom: 2.5rem; }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .dek, .meta, .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek { font-size: 1.15rem; color: var(--muted); max-width: 620px; margin-bottom: 1.25rem; }
+    .meta { color: var(--accent); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    article { padding-top: 2rem; padding-bottom: 4rem; border-top: 1px solid var(--border); }
+
+    p, li { font-size: 1.08rem; margin-bottom: 1.4rem; max-width: 680px; }
+    li { margin-bottom: 0.6rem; }
+    ul { padding-left: 1.4rem; margin-bottom: 1.4rem; }
+
+    .callout {
+      font-size: 1.15rem;
+      color: var(--text);
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.3rem;
+      max-width: 680px;
+      margin-bottom: 2rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    figure { max-width: 680px; margin: 1.5rem 0 2rem 0; }
+    figure img { width: 100%; display: block; border-radius: 8px; border: 1px solid var(--border); }
+    figcaption {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
+    .numbers {
+      max-width: 680px;
+      margin: 1rem 0 2rem 0;
+      border-collapse: collapse;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.98rem;
+    }
+    .numbers th, .numbers td {
+      text-align: left;
+      padding: 0.6rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .numbers th { color: var(--muted); font-weight: 600; white-space: nowrap; width: 34%; }
+
+    hr { border: 0; border-top: 1px solid var(--border); margin: 2.5rem 0; max-width: 680px; }
+
+    .back-link { display: inline-block; margin-top: 1rem; color: var(--muted); }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .article-header, article, footer, .site-nav-inner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/" aria-current="page">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Concept &middot; Pre-feasibility</div>
+    <h1>A restaurant on a hard little lot</h1>
+    <p class="dek">A 250 m&sup2; wedge of land in Ilh&eacute;us, a 45-degree street, and a bay view &mdash; worked up as a concept, with enough numbers to know whether to keep going.</p>
+    <div class="meta">Ilh&eacute;us &middot; Concept design &middot; Pre-feasibility</div>
+    <a href="/projects/" class="back-link">Back to projects</a>
+  </div>
+
+  <article>
+    <div class="callout">This is not a feasibility study. It is a concept with numbers &mdash; a &ldquo;pre-feasibility&rdquo; look at whether a small waterfront restaurant could work on one specific, awkwardly shaped lot, before anyone spends money finding out.</div>
+
+    <p>There is a small lot for sale in Sapetinga, in the Pontal district of Ilh&eacute;us, on the bay. It is a demolition site &mdash; an old house, half torn down, work stopped. It faces a public promenade: a sidewalk with benches on the near side, the street, another sidewalk on the water side, then a calm estuary with a low forested shore across it.</p>
+
+    <p>It is also a difficult shape. I wanted to see what a small restaurant on it would actually look like, and whether the numbers laughed me out of the room.</p>
+
+    <h2>The lot</h2>
+
+    <p>About 250 m&sup2;. Roughly 12 m wide. The building next door on the east side sits right on the shared line and steps down to a single story where it meets this lot. The house behind is built to the rear line too.</p>
+
+    <p>The catch is the street. It runs across the front at 45 degrees, so the lot is not a rectangle &mdash; it is a right trapezoid with the northeast corner sliced off. The long west edge, about 19 m, is the one that faces the water.</p>
+
+    <figure>
+      <img src="lot-plan.png" alt="A to-scale plan of a trapezoidal restaurant floor. The long top wall, about 19 meters, is drawn as glazing facing a promenade and bay. An open kitchen runs along the bottom wall. A bar and the entry sit on the angled right-hand wall. Two small bathrooms and a store occupy the blind left wall. Roughly thirty covers of tables fill the middle in two rows.">
+      <figcaption>The buildable floor after setbacks &mdash; about 128 m&sup2;. Three meters come off the diagonal street front, a little off each side, nothing at the rear where you build a blind wall against the neighbor. The glazed wall runs the full length of the promenade side.</figcaption>
+    </figure>
+
+    <h2>What fits</h2>
+
+    <p>One story. Roughly 30 covers. An open kitchen with a wood grill down the party wall, where you do not want windows anyway. A short bar and the entry on the angled street side. Two small bathrooms and the service space on the blind rear wall. And the whole 19-meter western wall as glass, onto the promenade and the bay.</p>
+
+    <figure>
+      <img src="interior.jpg" alt="Concept render: the interior of a small warm restaurant seen as a three-quarter cutaway. A floor-to-ceiling glass wall runs along one side, opening onto a promenade with benches and a calm bay at golden hour. An open kitchen with a grill runs along the opposite wall. A light-timber bar with stools sits near the entry. Rattan chairs, pale stone, tropical plants.">
+      <figcaption>Concept render, generated from the scale plan &mdash; so the dimensions and the cover count came along for the ride. It also takes liberties the site does not allow: the kitchen spills past the east party wall, and the room is glassier than it could be. The plan above is the accurate one; this is the mood.</figcaption>
+    </figure>
+
+    <h2>From the promenade</h2>
+
+    <figure>
+      <img src="exterior.jpg" alt="Concept render: a single-story restaurant seen at eye level from a waterfront promenade at golden hour. A long floor-to-ceiling glazed wall faces the promenade; warm light and diners are visible inside. Light timber and pale stone, a flat roof, tropical planting, a large almond tree to one side.">
+      <figcaption>The glazed wall from the promenade &mdash; though the render wraps glass around more of the building than the site permits. Only two sides can open: this promenade wall and the angled street front. The east and rear walls are blind, built against the neighbors. The low evening sun sets over the water &mdash; either the best thing about the room, or straight in the diners&rsquo; eyes, depending on the shading.</figcaption>
+    </figure>
+
+    <h2>The numbers</h2>
+
+    <table class="numbers">
+      <tr><th>Lot</th><td>~250 m&sup2;, trapezoidal. Asking <strong>R$600,000</strong>. My estimate as a building lot is closer to <strong>R$450,000&ndash;550,000</strong> &mdash; the ask carries a development premium the site cannot really deliver.</td></tr>
+      <tr><th>Buildable floor</th><td>~128 m&sup2; after setbacks. Coverage and floor-area ratios never bind here; the setbacks and the shape do.</td></tr>
+      <tr><th>Restaurant</th><td>~30 covers, ~90 m&sup2; of it usable dining after kitchen, bar and core.</td></tr>
+      <tr><th>Build cost</th><td>R$5,500&ndash;7,000 per m&sup2; for finished coastal quality &mdash; very roughly <strong>R$0.7&ndash;0.9M</strong> for shell and fit-out, before kitchen equipment.</td></tr>
+      <tr><th>The view</th><td>Real but modest from the ground &mdash; water through and past a large street tree. A clean panorama wants a floor of height. It is a bay, not the open ocean.</td></tr>
+    </table>
+
+    <h2>The part that decides it</h2>
+
+    <p>Parking. Local rules want a car space per residential unit, and there is no basement here &mdash; the water table is too high, 20 meters from the bay. A restaurant and its required parking do not both fit on a 128 m&sup2; ground floor.</p>
+
+    <p>So the first real question is not architectural, it is a permit question: can the parking requirement be reduced for small infill on the waterfront, or met off-site, or designed around? Until that is answered, everything above is a sketch.</p>
+
+    <p>The same envelope would take an upper dining deck &mdash; which is where the unobstructed view actually is, above the tree &mdash; or a small two-floor residence over the restaurant. Both make the parking problem harder, not easier.</p>
+
+    <hr>
+
+    <p>A nice concept, real constraints, and a clear next question. Not a plan. A thing to think with.</p>
+
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Concept published on alanhalley.com</span>
+  </footer>
+</body>
+</html>

@@ -26,6 +26,7 @@ $pages = @(
     @{ url = "/about/";                               check = "Alan Halley" }
     @{ url = "/projects/";                            check = "Projects" }
     @{ url = "/projects/starfire/";                    check = "STARFIRE" }
+    @{ url = "/projects/sapetinga-restaurant/";        check = "hard little lot" }
 )
 
 $pass = 0

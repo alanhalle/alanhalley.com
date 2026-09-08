@@ -1,5 +1,22 @@
 # Posts Log
 
+## 2026-09-07 — Project page: Sapetinga Restaurant (pre-feasibility concept)
+
+New project page: `/projects/sapetinga-restaurant/`. A concept-with-numbers look
+at a small waterfront restaurant on a real 250 m² lot in Ilhéus — the trapezoidal
+shape from the 45-degree street, the ~128 m² buildable floor, two AI concept
+renders (interior generated from the scale plan so the dimensions carry through;
+exterior at sunset), a numbers table, and the parking question that decides
+whether it could be real. Card added under Emerging Bets on the projects index.
+
+The interactive 360 walkaround was cut from v1 — Blockade Labs Skybox now
+paywalls the equirectangular export. Section can be added later (free
+partial-pano via Gemini + Pannellum, or a one-month paid Skybox export).
+
+**Not yet posted anywhere.** It's a musing dressed up nicely, not a product —
+possible fit for a future "concept design with AI" essay rather than a standalone
+X/LinkedIn post.
+
 ## 2026-09-06 — Gig launch: MVP, Lean Canvas, App Concept (Fiverr + Upwork Projects)
 
 Three gigs shipped live today, each with a matching Fiverr gig and Upwork Project: **MVP** (working, clickable prototype), **Lean Canvas** (structured strategy doc, problem/solution/segments), **App Concept** (early clickable concept/demo before committing to a full MVP build). Not yet promoted anywhere.
