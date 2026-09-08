@@ -13,9 +13,9 @@ Cut from v1: the interactive 360 walkaround (Blockade Labs Skybox paywalls the
 equirectangular export) and the exterior render (Gemini kept glazing the wrong
 walls). Both can be added later.
 
-**Not yet posted anywhere.** It's a musing dressed up nicely, not a product —
-possible fit for a future "concept design with AI" essay rather than a standalone
-X/LinkedIn post.
+**Scheduled:** Wed 10/7, LinkedIn — as a build/tooling story (scale plan → AI
+render → honest cost sketch), not a pitch. Draft in
+`workspace/posting-schedule.md`.
 
 ## 2026-09-06 — Gig launch: MVP, Lean Canvas, App Concept (Fiverr + Upwork Projects)
 
