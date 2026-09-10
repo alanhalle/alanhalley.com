@@ -466,6 +466,41 @@ change the decision.
 
 ---
 
+## PENDING — NSE submission (drafted 2026-09-10, postponed)
+
+**Not posted.** Drafted for the Sep 9 NSE submission, then held: submission 260430161 failed T&F's
+technical check on 2026-09-10 (portal corresponding-author email ≠ manuscript). Post once the
+submission clears technical check and is with an editor — "submitted" is a weaker claim if the
+record is still bouncing.
+
+Facts as of drafting: submission 260430161, *Nuclear Science and Engineering* (ANS / Taylor &
+Francis), reached NSE via T&F article transfer from FST. Title/abstract/keywords corrected on the
+portal record Sep 9. Public artifact = Zenodo concept DOI `10.5281/zenodo.20788782` (concept is
+correct for a post — it resolves to latest; manuscripts cite version DOI `…21418400`).
+
+### X — drafted, not posted
+> In 1986 Bill Miller and I published a neutron streaming analysis of gaps in fusion reactor shielding. The deep-penetration cases never converged. Monte Carlo couldn't reach them.
+>
+> Reran it in OpenMC with in-code MAGIC weight windows. They converge now: FSD 0.017.
+>
+> Submitted to Nuclear Science and Engineering.
+>
+> https://doi.org/10.5281/zenodo.20788782
+
+### LinkedIn — drafted, not posted
+> In 1986 Bill Miller and I published "Neutron Streaming Through Gaps in Fusion Reactor Shielding" — a MORSE-CG Monte Carlo study of the STARFIRE tokamak's shield joints. The straight-slot cases were fine. The stepped-gap cases, the ones that actually matter to a shield designer, sat at the sampling noise floor. Analog Monte Carlo could not get there in 1986.
+>
+> I reran the study in OpenMC this year with in-code MAGIC weight windows. The cases that never converged now converge cleanly — relative standard deviation 0.017, down from a 1986 floor above 3. The straight-slot falloff reproduces at 1.08 decades against the original's ~1 decade, and the three-step staircase lands within 0.08 decades of the solid shield, matching the original conclusion.
+>
+> The old numbers weren't wrong. What changed is that a calculation which was at the edge of feasibility on 1980s hardware is now a free Colab notebook and about an hour of runtime.
+>
+> Submitted to Nuclear Science and Engineering. Code and data: https://doi.org/10.5281/zenodo.20788782
+
+Neither draft mentions that ANE and FST declined first. That's the more interesting story and it's
+Alan's call whether to make two rejections public.
+
+---
+
 ## Essay Candidates — Not Yet Written
 
 - **Partially Ameliorated** — The second brain journey: Notion → Obsidian → Emergent → R$700 OpenClaw → Nimbalyst → hook writing to empty folder for months. Draft at `workspace/second-brain-essay-draft.md`. Theme: Computing Journey.
