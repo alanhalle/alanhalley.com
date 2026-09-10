@@ -457,12 +457,31 @@ where checkout carried no metadata and paid votes never reached the leaderboard)
 template-literal HTML doesn't scale. Ends with the three thresholds that would
 change the decision.
 
-**Not yet posted anywhere.** Candidate channels when DVMBA's launch settles:
-- **Indie Hackers** — this is the angle already identified in
-  `workspace/darthvader-mba-channel-variants.md`: lead with the build, not the product.
+### LinkedIn — posted 2026-09-10
+Week 1 of the Sep/Oct posting schedule, one day late (slot was Wed 9/9). Build only —
+DVMBA is never named in the post, it's carried by the essay link, per the "product
+doesn't belong on LinkedIn" reasoning in `workspace/darthvader-mba-channel-variants.md`.
+
+> Five years ago, a small site that takes payments, stores data, and sends email meant five services: a static host, an API server, a managed Postgres, a transactional email vendor, and a pipeline to tie them together. Five bills, five sets of credentials, a four-minute build.
+>
+> I built one recently as a single JavaScript file.
+>
+> One Cloudflare Worker renders every page as HTML at the edge. A D1 database — SQLite, bound directly to the Worker — holds the data. Static assets come out of that same Worker. Inbound and outbound email are bindings. Stripe is the only third party in the request path, and only at the payment step.
+>
+> No framework. No build step. No bundler, no transpiler, no CI. I edit worker.js, run one command, and about twenty seconds later it's live in every Cloudflare data center.
+>
+> What changed is that the edge runtime got a database attached to it. Once your data lives next to your compute and both live at the CDN, the middle tier stops having a reason to exist. I've been doing this a long time. I don't often get to delete four layers.
+>
+> The cost is total lock-in. Registrar, DNS, compute, database, storage, email — one company. Moving off isn't a migration, it's a rewrite. One outage takes all of it, including the email that would tell me something's wrong.
+>
+> I wrote up both halves, and the three thresholds that would change the decision:
+>
+> https://alanhalley.com/writing/one-file-one-vendor/
+
+**Still unposted elsewhere.** Remaining candidate channels:
+- **Indie Hackers** — lead with the build, not the product.
 - **Hacker News** — a link to the essay is a different submission from the Show HN
   (which was auto-killed Sep 3). Wait until that's resolved before trying again.
-- **LinkedIn** — the *building* of DVMBA is fine here even though the product isn't.
 
 ---
 
