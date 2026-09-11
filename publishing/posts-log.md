@@ -1,5 +1,29 @@
 # Posts Log
 
+## 2026-09-11 — Essay published: Done Is a Claim
+
+**URL:** https://alanhalley.com/writing/done-is-a-claim/
+**Type:** Software Essay
+**Draft origin:** `workspace/essay-done-is-a-claim-draft.md`, v3, citation pass completed
+2026-08-22. Sat unpublished for three weeks before today.
+
+Companion to *Convincing Is Not Correct* — the project-management-governance version of the
+same argument. Central case: four AI-written physics programs that defined everything correctly
+and never ran the calculation, returning exit code zero. Argues that a PM system holds claims
+about work, never work itself, and that an AI teammate can produce a status update with none of
+the warranty a human's carries. Four concrete changes proposed: split Done into reported/verified,
+write acceptance criteria that execute, tag provenance on anything written into the record, track
+escape rate against throughput.
+
+Cites Asana's AI Teammates marketing copy, Shopify's River/Aquifer numbers (59,918 sessions,
+5,170 channels, 3,536 coauthored PR merges), GitHub's agent-review stats, Atlassian Team '26,
+monday.com's agent-identity positioning, DHH's Basecamp agent-accessibility post, and a
+Thoughtworks retreat report — all linked inline.
+
+**Also posted the same day:** a shortened version of the argument (the warranty formulation,
+without the essay's full case-study detail) as a reply to Aaron Porter's RACI question in a
+LinkedIn thread on multi-agent coordination — no link back to the site, standalone comment.
+
 ## 2026-09-07 — Project page: Sapetinga Restaurant (pre-feasibility concept)
 
 New project page: `/projects/sapetinga-restaurant/`. A concept-with-numbers look
