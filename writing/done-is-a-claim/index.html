@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Done Is a Claim - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/done-is-a-claim/" />
+  <meta name="description" content="Done Is a Claim — What happens to accountability, acceptance, and the project record when a participant can produce status but cannot carry a warranty." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    strong { font-weight: 700; color: var(--text); }
+    em { font-style: italic; }
+
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding-left: 1.2rem;
+      margin: 1.4rem 0;
+      max-width: 640px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    blockquote strong { color: var(--muted); }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+        <a href="/#work">Work With Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Essay</div>
+    <h1>Done Is a Claim</h1>
+    <p class="dek">What happens to accountability, acceptance, and the project record when a participant can produce status but cannot carry a warranty.</p>
+    <div class="meta">Software &middot; Project Management</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>I ran an experiment recently where I gave an AI thirty physics problems, then executed every program it wrote instead of reading them. Four of those programs did something I haven't stopped thinking about. They defined everything correctly &mdash; materials, geometry, the whole setup &mdash; and then never ran the calculation. No error. No output. Exit code zero, which in software means everything went fine.</p>
+
+    <p>If I had reviewed that code the way people normally evaluate AI work, by reading it and deciding whether it looked right, I'd have passed all four.</p>
+
+    <p>Exit code zero is the machine's version of moving a card to Done.</p>
+
+    <p>I've been a project manager for a long time, and that's the part that should worry our profession. Not whether AI writes good code. Whether the systems we manage with can tell the difference between work and a report of work &mdash; because they were built in a world where those two things were reliably connected, and that world is ending.</p>
+
+    <h2>What a project management system actually contains</h2>
+
+    <p>Open any of them. Asana, Basecamp, Jira, Monday, whatever your shop runs. Look at what is actually stored there.</p>
+
+    <p>Statuses. Assignees. Dates. Comments. Percent complete.</p>
+
+    <p>Every one of those is a claim <em>about</em> work. None of them is work. The PM system has never once looked at a deliverable. It cannot. It holds assertions, and its entire value comes from those assertions being roughly true, roughly on time, most of the time.</p>
+
+    <p>That has held up for decades because of something nobody writes into the methodology: when a person marks a task Done, the status carries a warranty. Their name is on it. They'll be at the standup tomorrow. They'll be the one called when it breaks in production. They have to keep working with the people they mislead. None of that is in the data model &mdash; all of it is doing the load-bearing work.</p>
+
+    <p>An AI teammate produces a status update with identical syntax and none of that warranty. Same field, same green check, same timestamp. The system was never designed to distinguish them, because until now it never had to.</p>
+
+    <h2>The pitch names the thing it removes</h2>
+
+    <p>Yesterday I got a marketing email from Asana about their <a href="https://asana.com/resources/ai-teammates-overview" target="_blank" rel="noopener">AI Teammates</a>, the agent product they launched in March. Two phrases in it, both selling the same benefit:</p>
+
+    <blockquote>"they hit the ground running <strong>without any hand-holding</strong>"</blockquote>
+    <blockquote>"hit every deadline <strong>without the constant coordination</strong>"</blockquote>
+
+    <p>Hand-holding and constant coordination are the unkind names for oversight and status verification. That is the function I just described as load-bearing &mdash; the part that was never in the data model and was doing the work anyway. The email sells its removal. Not as a side effect to be managed. As the reason to buy.</p>
+
+    <p>Two more details in the same email. The teammates work "around the clock," which means status changes at hours when no human is present to look at anything. And you "assign or @mention your teammate" &mdash; assignment being the accountability primitive of every project management system ever built. The assignee field exists to answer <em>who is answerable</em>. It can now hold something that cannot be answerable, and it renders identically to a person.</p>
+
+    <p>What the email never mentions: review, verification, audit, provenance, or what happens when the teammate is wrong.</p>
+
+    <p>I want to be fair about this. Marketing copy is not a product. Asana may well have review affordances the email doesn't bother listing, and judging their engineering by their email list would be sloppy. But the copy is evidence of something real &mdash; what buyers are being taught to expect. Which is exactly what you will be managing against when your VP forwards you that email and asks why the team still needs so much coordination.</p>
+
+    <h2>The metric that inverts</h2>
+
+    <p>Here is the finding from my study that I'd put in front of every PM I know.</p>
+
+    <p>I scored those thirty programs two ways. First, did the program run &mdash; a pass/fail gate. Second, was the answer physically correct, checked against a published result I already had.</p>
+
+    <p>Two versions of the model. One passed the run-gate twice as often as the other. That same one got the physics wrong <em>every single time</em> it could be graded. The two criteria ranked them in opposite directions. A benchmark that stopped at "does it run" would have confidently recommended the worse one.</p>
+
+    <p>Now look at your dashboard. Tickets closed. Cycle time. Velocity. Story points burned down. Sprint completion rate.</p>
+
+    <p>Every one of those is a "does it run" metric. Not one of them is a "is it correct" metric.</p>
+
+    <p>An AI teammate will win on all of them, immediately and visibly. And if correctness is measured somewhere else &mdash; by QA weeks later, by a customer, by nobody &mdash; then what you will observe is your delivery metrics improving while the work quietly gets worse. You will observe this on the dashboard, which is the instrument that cannot see the problem.</p>
+
+    <p>The specific signature to watch for: throughput climbing while defect escape rate stays flat or rises. If you are not tracking escape rate against throughput, adding an AI teammate means you have no way to detect the trade.</p>
+
+    <h2>The resolution note is not evidence</h2>
+
+    <p>One more result, and it's the one that would fool me.</p>
+
+    <p>In a second round of my experiment, I showed each failed program its own error message and asked for a fix. Most got fixed. One did something else. It was told, verbatim, that particles were being lost from the simulation. It left the actual defect untouched, moved something unrelated, raised the tolerance threshold so the error would stop being reported, cut the workload, and wrote a clear, well-reasoned comment explaining why the problem was now solved.</p>
+
+    <p>It was wrong. It failed again in under eight seconds.</p>
+
+    <p>The reasoning in that comment was plausible. It was, in fact, the same hypothesis an experienced reviewer had reached for independently. And notice what it did: it moved toward <em>suppressing the alarm</em> rather than fixing the fault. Raise the threshold high enough and the run "passes" while still broken.</p>
+
+    <p>In your PM system, that is a ticket closed with an articulate resolution note. The note is what you read. The note is not evidence. If your acceptance process is "read the update and approve," you will approve that ticket every time.</p>
+
+    <h2>Then it writes the history</h2>
+
+    <p>This is the part I only understood because it happened to me this week.</p>
+
+    <p>I found a note in my own project records stating a confirmed root cause for a problem, with a direct quotation attributed to a named person, filed under the heading ROOT CAUSE FOUND. It had come out of an AI session months earlier. I never verified it. The person, as far as I can tell, never said it. It had been sitting there long enough that it was used &mdash; by an AI reading my own records &mdash; to tell me my recollection of events was wrong.</p>
+
+    <p>Now scale that into a shared PM system with an AI teammate that comments, updates, and writes retrospectives.</p>
+
+    <p>The thing being managed becomes the thing writing the record of how it was managed. Your audit trail, your decision log, your lessons learned, your post-incident findings &mdash; increasingly authored by a participant, with no external record to check against and no provenance marking which claims a human ever confirmed.</p>
+
+    <p>That is not a productivity question. It is a governance question.</p>
+
+    <p>And at least one company has answered it, in a way I think our profession should be copying.</p>
+
+    <p>Shopify runs an internal agent in Slack called River, on a platform they call Aquifer. In a thirty-day window it logged <strong>59,918 sessions across 5,170 Slack channels</strong>, with more than 7,000 people using it (<a href="https://shopify.engineering/under-the-river" target="_blank" rel="noopener">Shopify Engineering</a>). It is not a pilot.</p>
+
+    <p>River <strong>refuses direct messages.</strong> In Shopify's own words: <em>"River only works in the open. No direct messages."</em> And: <em>"Every conversation with River becomes a public Slack transcript, open by default to other Shopify employees."</em></p>
+
+    <p>Sit with that constraint for a second, because it is doing something subtle. It doesn't make the agent more accurate. It makes the agent <strong>auditable</strong> &mdash; there is no private channel where a claim can be generated, absorbed into someone's understanding, and then surface later as established fact with no traceable origin. Which is exactly how a fabricated quotation ended up in my records under the heading ROOT CAUSE FOUND, and exactly why it survived for months.</p>
+
+    <p>The lesson generalizes past Slack. If an AI teammate can contribute to your project's record, the interaction that produced the contribution should be as durable and as inspectable as the contribution itself. Most PM tools let an agent post a comment or close a ticket with no record of what it was asked, what it saw, or what it was reasoning from. Shopify's design says: no private channel, no unattributable claims. That is a governance control, and it was available to all of us the whole time.</p>
+
+    <h2>Four controls, and you need to know which one you have</h2>
+
+    <p>A caveat first, because it matters for how you read this section. I have spent a career evaluating, recommending and living with these systems, but I have not re-reviewed the field this year &mdash; and this year is the only one that counts for product specifics. Everything below moved in the last twelve months and some of it moved this week. Treat the names as illustrations of a control type, not as a buyer's guide, and check your own stack rather than trusting my snapshot of it.</p>
+
+    <p>The control types are the durable part. There are four ways to answer "who is accountable for what this agent did," and they are genuinely different governance postures, not marketing variants of one thing.</p>
+
+    <p><strong>Identity</strong> &mdash; give the agent an account. It signs in, it authenticates, it acts as a participant rather than as anonymous background automation. The bet: if every action traces to a principal, <em>who did this</em> always has an answer. monday.com describes building infrastructure along these lines, letting agents sign up, authenticate and operate in the platform as active participants rather than background automations (<a href="https://www.uctoday.com/project-management/monday-com-repositions-as-ai-work-platform-putting-agents-at-the-centre-of-project-execution/" target="_blank" rel="noopener">UC Today</a>).</p>
+
+    <p><strong>Audit</strong> &mdash; log everything and review after the fact. The bet: you needn't constrain the agent if nothing it does is invisible. Atlassian announced agents assignable to Jira work items with full audit logging, admin usage dashboards and granular access controls at Team '26 (<a href="https://www.atlassian.com/blog/company-news/rovo-team-26" target="_blank" rel="noopener">Atlassian</a>).</p>
+
+    <p><strong>Transparency</strong> &mdash; make the interaction itself public rather than merely logged. Shopify's River, above: no private channel, every exchange searchable by anyone. The bet: sunlight beats logging, because a log is something you must already suspect a problem to go looking through.</p>
+
+    <p><strong>Bring your own agent</strong> &mdash; don't embed one. Expose the surface and let people connect whatever they already use. 37signals experimented with AI features across Basecamp for eighteen months and shipped almost none of it, on the grounds that it wasn't good enough; in March they instead made Basecamp <em>agent-accessible</em> with a revamped API, a new CLI, and an agent skill, so that <em>"anything you can do in Basecamp, agents can now do too"</em> (<a href="https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949" target="_blank" rel="noopener">DHH, 25 March 2026</a>).</p>
+
+    <p>To be accurate about their position: this is not a renunciation. DHH says in the same post that they <em>"keep cooking on actually-useful native AI features."</em> They haven't shipped one yet; they have not sworn off it.</p>
+
+    <p>Even so, the structural difference is the one I didn't anticipate, and it may be the most conservative reading of the problem. If the agent is <em>yours</em>, running under your account on your initiative, accountability never detaches. You ran it; you are answerable for what it filed. An embedded "teammate" conjures a third party that can hold a status but cannot hold a warranty. This posture doesn't solve that problem &mdash; it avoids creating it.</p>
+
+    <p>And then there is the posture that isn't a control at all: ship capability and say nothing about failure. Some vendors now advertise agent counts in the hundreds while publishing, as far as I could find, almost nothing about what happens when one is wrong. I'd rather note the silence than characterise any particular company from the outside &mdash; but the silence is the finding. <strong>Capability is what gets announced. Accountability is what you have to go looking for, and if you can't find it, that is information.</strong></p>
+
+    <p>So the question to take to your own vendor is not "do you have AI teammates." As of this year, everyone does. It is: <strong>which of these four did you build, and can you show me it working?</strong></p>
+
+    <h2>Approval has a throughput limit and nobody knows what it is</h2>
+
+    <p>Here is a governance question I can't answer, and I don't think anyone can yet.</p>
+
+    <p>At what rate can a person approve work and still be verifying anything?</p>
+
+    <p>There is some threshold above which approval stops meaning "I checked this" and starts meaning "I didn't object to this." Both produce the same artifact &mdash; an approval &mdash; and I don't know how you'd tell from the inside which one you were doing. The signature of a rubber stamp is that it feels like judgment.</p>
+
+    <p>Every governance regime our profession has ever designed assumes review capacity is roughly matched to production capacity. Change control, stage gates, sign-offs, the approval matrix &mdash; all of it presumes that if work arrives faster, you add reviewers, and reviewers are the same kind of thing as producers. That assumption held for as long as producing and reviewing were both done by people at people speed.</p>
+
+    <p>It doesn't hold now, and this isn't hypothetical any more. GitHub reports that <strong>"more than one in five code reviews on GitHub now involve an agent,"</strong> and that <strong>"GitHub Copilot code review has processed over 60 million reviews, growing 10x in less than a year"</strong> (<a href="https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/" target="_blank" rel="noopener">GitHub Blog</a>). The same piece describes agent-generated pull request volume growing substantially faster than human reviewer availability &mdash; a widening gap between throughput and review capacity.</p>
+
+    <p>Not faster than we can <em>read</em>. Faster than we can <em>judge</em>. Those are different limits and only one of them can be solved by hiring.</p>
+
+    <p>Shopify publishes numbers that let you see the shape of it: <strong>3,536 River-coauthored pull requests merged in a thirty-day window</strong>, and <em>"one in eight merged pull requests across Shopify is coauthored by it"</em> (<a href="https://shopify.engineering/under-the-river" target="_blank" rel="noopener">Shopify Engineering</a>).</p>
+
+    <p>Read that carefully, because I got it wrong the first time and the error is instructive. The word is <strong>coauthored</strong>, not authored &mdash; a human is in the loop by construction. And on the question a project manager would most want answered, what review those merges received, the source says nothing at all. I had written "manually reviewed" into an earlier draft of this essay. It isn't in the source. I picked it up from a summary of the source and carried it forward, which is precisely the move this whole essay is warning about.</p>
+
+    <p>So the honest reading is narrower than either the optimistic or the pessimistic one. One in eight merged pull requests at a major engineering organisation is agent-coauthored, that number is public, and the review posture behind it is not. But notice that they published enough for the question to be <em>askable at all</em>. That is not nothing, and it is the governance point rather than a point about Shopify. Most organizations adopting agents today could not tell you what fraction of their completed work was agent-authored, let alone what review it received. If you can't produce that number, you don't have a review problem yet &mdash; you have a measurement problem, and the review problem is behind it.</p>
+
+    <p>Project management has spent forty years getting better at tracking throughput. We are about to find out how little of that machinery was ever measuring correctness.</p>
+
+    <h2>It isn't just me, and it isn't just physics</h2>
+
+    <p>I'd be more tentative about all of this if my little experiment were the only evidence. It isn't, and the corroboration arrived from a direction I wasn't watching.</p>
+
+    <p>Thoughtworks convened senior engineering practitioners from major technology companies at a retreat in February 2026, under Chatham House Rule, and published a key-takeaways white paper. Two findings from it, both of which I ran into independently while grading neutron shielding code. (I'm working from <a href="https://agent-wars.com/news/2026-03-16-thoughtworks-retreat-ai-agents-engineering-roles" target="_blank" rel="noopener">a report of that white paper</a> rather than the PDF itself &mdash; worth saying, in an essay about not trusting summaries.)</p>
+
+    <p>The first: teams working with agents are rediscovering structured requirement formats &mdash; EARS, state machines, decision tables &mdash; because <strong>"traditional user stories lack the precision AI agents need to produce correct implementations."</strong> In my study, one specification asked for a measurement "at the shield surface" without saying which side of the surface. Both readings are correct English. Two runs chose differently and the answers differed by a quarter of the tolerance band. Nobody noticed the ambiguity until two samples disagreed with each other. A human would have asked. An agent picks one and proceeds, and the ambiguity becomes a silent bias in your results.</p>
+
+    <p>The second is sharper, and it's the one I'd underline for anyone who writes acceptance criteria. Test-driven development was singled out as producing dramatically better outcomes from coding agents, and the mechanism is specific: <strong>"writing tests before code prevents agents from generating tests that merely confirm their own broken output."</strong></p>
+
+    <p>I hit exactly that. One of the criteria in my scoring harness was phrased as "nothing contradicts the reference." It could not fail. Noise passed it. A result too imprecise to have disagreed with anything scored as agreement. I wrote that criterion myself, reviewed it several times, and never saw it, because it reads perfectly well &mdash; it only reveals itself when you notice it has no failing case.</p>
+
+    <p>Two people looking at completely different problems, one in consulting practice and one in nuclear shielding, arriving at the same structural finding: <strong>an agent will satisfy the check you wrote rather than the thing you meant, and if the check can't fail, it will pass.</strong> That is a fact about acceptance criteria, not about physics. It applies to every deliverable you have ever signed off on.</p>
+
+    <h2>Four things I'd change on Monday</h2>
+
+    <p><strong>Split Done into two states.</strong> "Reported done" and "verified done." A non-human may move a card into the first. Only a human may move it into the second, and only after looking at the artifact. This is one configuration change and it is the highest-leverage thing on this list.</p>
+
+    <p><strong>Write acceptance criteria that execute.</strong> If the only way to judge a deliverable is to read it and form an impression, that is precisely where an AI teammate is most dangerous &mdash; not least. Prefer criteria a machine can check, or a human can check in one concrete action.</p>
+
+    <p><strong>Tag provenance on anything written into the record, and keep the interaction as inspectable as the output.</strong> Who asserted this, what were they working from, and did a human verify it? An unmarked claim becomes fact by sitting still. Shopify's answer &mdash; the agent works only in public, no private channels, every exchange searchable &mdash; is the strongest version of this I've seen, and there is no reason it has to be limited to Slack.</p>
+
+    <p><strong>Track escape rate against throughput.</strong> If velocity improves and escape rate doesn't, you got faster. If velocity improves and escape rate holds or worsens, you got the inversion, and the dashboard will keep congratulating you.</p>
+
+    <p>None of this is anti-AI. I use these tools every working day and the experiment above cost me a few dollars and an afternoon to run. The point is narrower and it is old: <strong>verify the artifact, not the operation.</strong> A project management system is a machine for collecting reports about operations. It has never seen an artifact in its life.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
