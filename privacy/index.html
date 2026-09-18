@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/privacy/" />
+  <meta name="description" content="Privacy policy for Alan Halley's personal software, including the Second Brain inbox tools." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand { color: var(--text); font-weight: 700; }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+
+    .hero, section, footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .hero {
+      padding-top: 4.5rem;
+      padding-bottom: 2rem;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 { font-size: 2.1rem; line-height: 1.25; margin-bottom: 1rem; }
+    h2 { font-size: 1.25rem; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; }
+    ul { margin: 0 0 1rem 1.25rem; }
+    li { margin-bottom: 0.4rem; }
+
+    .updated { color: var(--muted); font-size: 0.9rem; }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="eyebrow">Privacy</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated 17 September 2026</p>
+  </div>
+
+  <section>
+    <p>This policy covers the personal software I run under my own Google account, including the tools I refer to collectively as <strong>Second Brain</strong>. These are single-user tools. I am the only user, and they are not offered to the public.</p>
+
+    <h2>What the software accesses</h2>
+    <p>Second Brain requests read-only access to my own Gmail account using the <code>gmail.readonly</code> scope. It cannot send, delete, or modify mail. It accesses no other Google service &mdash; no Drive, Calendar, or Contacts.</p>
+
+    <h2>What it does with that access</h2>
+    <p>On a schedule, it reads recent messages in my inbox to sort them into categories and produce a short digest for me to read. Message text may be sent to the Anthropic API for that classification step. Anthropic does not train models on data submitted through its API.</p>
+
+    <h2>What is stored, and where</h2>
+    <ul>
+      <li>The digest output is written to a private repository on GitHub that only I can read.</li>
+      <li>Message bodies are not retained beyond the run that processes them.</li>
+      <li>Access credentials are stored as encrypted repository secrets, never in code.</li>
+    </ul>
+
+    <h2>What is not done</h2>
+    <p>No data is sold, rented, or shared with third parties for advertising or any other purpose. There are no analytics or tracking in these tools. No other person has access to the data they read, and no account other than my own is ever accessed.</p>
+
+    <h2>Correspondents</h2>
+    <p>Mail I receive necessarily contains information about the people who wrote to me. That information is processed only to sort my own inbox, is not retained beyond processing, and is never used to contact anyone, build a profile, or for any purpose beyond my reading of my own mail. If you have written to me and want to know what happened to your message, ask me.</p>
+
+    <h2>Retention and removal</h2>
+    <p>I can revoke the software's access to my Google account at any time through my Google Account security settings, which immediately stops all access. Generated digests are deleted when I delete them.</p>
+
+    <h2>This website</h2>
+    <p>alanhalley.com is a static site. It sets no cookies and runs no analytics or advertising scripts. Standard server logs are kept by the host in the ordinary course of serving pages.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the revised version will be posted here with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:alan@alanhalley.com">alan@alanhalley.com</a></p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Ilheus, Brazil</span>
+  </footer>
+</body>
+</html>
