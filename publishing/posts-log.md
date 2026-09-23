@@ -1,5 +1,23 @@
 # Posts Log
 
+## 2026-09-23 — Essay published: The Last 80%
+
+**URL:** https://alanhalley.com/writing/the-last-80-percent/
+**Type:** Software Essay
+**Draft origin:** `writing/the-last-80-percent/draft-v1.md`
+
+Short piece prompted by Andrej Karpathy's MenuGen post (Claude wrote the frontend in hours,
+felt 80% done at 20% — the rest was OAuth/Clerk, Stripe, deploy, deprecated docs) plus Alan's
+own darthvader.mba bug: Stripe checkouts charged customers but the webhook had no metadata to
+record which nominee the vote was for, so votes never hit the leaderboard. Argues the AI-written
+code is the easy 20%; auth/webhooks/deploy is the hard 80% and doesn't get faster. No pitch in
+the body — bare link to `/#work` at the end, matching the candid-post structure that worked
+before (see the Aug 16 IndieHackers postmortem, referenced in
+[[feedback_marketing_voice_bluntness]]).
+
+Written with an eye toward possibly sending to Carl Vellotti (fullstackpm.com) as evidence for
+an outsourced-deployment pitch to his PM newsletter audience — not sent yet.
+
 ## 2026-09-11 — Essay published: Done Is a Claim
 
 **URL:** https://alanhalley.com/writing/done-is-a-claim/
