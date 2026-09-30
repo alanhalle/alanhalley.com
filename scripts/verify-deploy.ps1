@@ -8,7 +8,8 @@ $pages = @(
     @{ url = "/";                                     check = "Alan Halley" }
     @{ url = "/writing/";                             check = "Writing" }
     @{ url = "/writing/the-last-80-percent/";         check = "darthvader.mba" }
-    @{ url = "/writing/convincing-is-not-correct/";    check = "Verify the artifact" }
+    @{ url = "/writing/convincing-is-not-correct/";    check = "the-ranking-depends-on-the-ruler" }
+    @{ url = "/writing/the-ranking-depends-on-the-ruler/"; check = "a sentence of mine I had to take back" }
     @{ url = "/writing/working-from-home-since-1975/"; check = "recreating that hallway" }
     @{ url = "/writing/less-than-two-dollars/";         check = "Flagrante" }
     @{ url = "/writing/full-moon/";                    check = "Rocheport" }
@@ -26,7 +27,7 @@ $pages = @(
     @{ url = "/writing/my-florida-vacation/";         check = "Florida" }
     @{ url = "/about/";                               check = "Alan Halley" }
     @{ url = "/projects/";                            check = "Projects" }
-    @{ url = "/projects/starfire/";                    check = "STARFIRE" }
+    @{ url = "/projects/starfire/";                    check = "the-ranking-depends-on-the-ruler" }
     @{ url = "/projects/sapetinga-restaurant/";        check = "hard little lot" }
 )
 

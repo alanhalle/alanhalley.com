@@ -1,5 +1,24 @@
 # Posts Log
 
+## 2026-09-30 — Essay published: The Ranking Depends on the Ruler
+
+**URL:** https://alanhalley.com/writing/the-ranking-depends-on-the-ruler/
+**Type:** Software Essay
+**Draft origin:** `writing/the-ranking-depends-on-the-ruler/draft-v1.md`
+
+Sequel to *Convincing Is Not Correct*: the cross-vendor results of the OpenMC LLM benchmark
+(seven models from Anthropic, OpenAI and Google plus Gemma), published the same day on Zenodo
+(paper 10.5281/zenodo.23067522, archive 10.5281/zenodo.23067451). Turn: GPT-6 Astra's pre-publication
+review picked "No failure was a physics misunderstanding" as the paper's weakest claim — the same
+idea as the August essay's "The AI understood the radiation fine" — and it was withdrawn.
+
+Cross-links added: `/projects/starfire/` links to it ("Follow-up"), and *Convincing Is Not Correct*
+ends with a dated follow-up line pointing to it.
+
+Social: projectmanagement.com follow-up posted 2026-09-30 in the "which AI will win" thread
+(`workspace/pm-com-post-2026-09-30.md`). Planned by Alan: LinkedIn, OpenMC Discourse, Nimbalyst
+Discord — not yet posted.
+
 ## 2026-09-23 — Essay published: The Last 80%
 
 **URL:** https://alanhalley.com/writing/the-last-80-percent/
