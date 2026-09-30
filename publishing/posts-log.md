@@ -17,7 +17,8 @@ ends with a dated follow-up line pointing to it.
 
 Social: projectmanagement.com follow-up posted 2026-09-30 in the "which AI will win" thread
 (`workspace/pm-com-post-2026-09-30.md`). ResearchGate: paper uploaded 2026-09-30, DOI and abstract
-set by hand — https://www.researchgate.net/publication/415032887. Planned by Alan: LinkedIn, OpenMC Discourse, Nimbalyst
+set by hand — https://www.researchgate.net/publication/415032887. LinkedIn: posted 2026-09-30
+(draft in `workspace/Neutron Streaming/sharing-posts-2026-09-30.md`). Planned by Alan: LinkedIn, OpenMC Discourse, Nimbalyst
 Discord — not yet posted.
 
 ## 2026-09-23 — Essay published: The Last 80%
