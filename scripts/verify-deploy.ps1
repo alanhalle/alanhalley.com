@@ -5,7 +5,8 @@
 $base = "https://alanhalley.com"
 
 $pages = @(
-    @{ url = "/";                                     check = "Alan Halley" }
+    @{ url = "/";                                     check = "hire-the-right-developer-for-your-project" }
+    @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
     @{ url = "/writing/";                             check = "/writing/three-days/" }
     @{ url = "/writing/three-days/";                  check = "four pages of boilerplate" }
     @{ url = "/writing/the-last-80-percent/";         check = "darthvader.mba" }
