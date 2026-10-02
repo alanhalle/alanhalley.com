@@ -1,5 +1,19 @@
 # Posts Log
 
+## 2026-10-02 — Essay published: Three Days
+
+**URL:** https://alanhalley.com/writing/three-days/
+**Type:** Software Essay
+**Draft origin:** `writing/three-days/draft-v1.md`
+
+Hiring when writing became free. Alan gave vendors 2–3 weeks for RFPs; today he found an Upwork job
+6 minutes after posting and it had 50+ proposals at 11 minutes. Four rules: wait three days, one
+screening question, believe what you can verify (live software), small paid first milestone. Closing
+line links the new "Hire a Developer" gig (Upwork + Fiverr).
+
+Social: LinkedIn draft in `writing/three-days/linkedin-draft.md`, **not posted**, queued for Mon 10/5
+in `Nimbalyst/workspace/posting-schedule.md`.
+
 ## 2026-09-30 — Essay published: The Ranking Depends on the Ruler
 
 **URL:** https://alanhalley.com/writing/the-ranking-depends-on-the-ruler/
@@ -18,7 +32,7 @@ ends with a dated follow-up line pointing to it.
 Social: projectmanagement.com follow-up posted 2026-09-30 in the "which AI will win" thread
 (`workspace/pm-com-post-2026-09-30.md`). ResearchGate: paper uploaded 2026-09-30, DOI and abstract
 set by hand — https://www.researchgate.net/publication/415032887. LinkedIn: posted 2026-09-30
-(draft in `workspace/Neutron Streaming/sharing-posts-2026-09-30.md`). OpenMC Discourse (new topic) and Nimbalyst Discord: posted 2026-09-30. All planned channels done.
+(draft in `workspace/Neutron Streaming/sharing-posts-2026-09-30.md`). OpenMC Discourse (new topic) and Nimbalyst Discord: posted 2026-09-30. All planned channels done. SSRN: posted 2026-10-01 (CC BY 4.0) — http://ssrn.com/abstract=7548199 (author page https://ssrn.com/author=13200848).
 
 ## 2026-09-23 — Essay published: The Last 80%
 
