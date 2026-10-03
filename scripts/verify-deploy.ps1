@@ -15,7 +15,7 @@ $pages = @(
     @{ url = "/writing/working-from-home-since-1975/"; check = "recreating that hallway" }
     @{ url = "/writing/less-than-two-dollars/";         check = "Flagrante" }
     @{ url = "/writing/full-moon/";                    check = "Rocheport" }
-    @{ url = "/writing/henry-and-polly/";             check = "Bee Trace" }
+    @{ url = "/writing/henry-and-polly/";             check = "a settlers' road on the Grand Divide" }
     @{ url = "/writing/family-tree-ai/";              check = "FindaGrave" }
     @{ url = "/writing/the-go-between-revisited/";    check = "integration point" }
     @{ url = "/writing/real-money-real-people/";      check = "Brief Work" }
