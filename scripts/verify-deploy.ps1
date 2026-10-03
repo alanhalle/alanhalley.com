@@ -7,7 +7,8 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = "hire-the-right-developer-for-your-project" }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
-    @{ url = "/writing/";                             check = "/writing/the-high-road/" }
+    @{ url = "/writing/";                             check = "/writing/what-a-bend-buys/" }
+    @{ url = "/writing/what-a-bend-buys/";            check = "Somebody still has to run them" }
     @{ url = "/writing/the-high-road/";               check = "Earl told me in one sentence" }
     @{ url = "/writing/the-high-road/map/";           check = "Companion to" }
     @{ url = "/writing/the-high-road/henry-polly-flyover.kml"; check = "Fly from Rocheport" }
@@ -32,7 +33,7 @@ $pages = @(
     @{ url = "/writing/my-florida-vacation/";         check = "Florida" }
     @{ url = "/about/";                               check = "Alan Halley" }
     @{ url = "/projects/";                            check = "Projects" }
-    @{ url = "/projects/starfire/";                    check = "the-ranking-depends-on-the-ruler" }
+    @{ url = "/projects/starfire/";                    check = "/writing/what-a-bend-buys/" }
     @{ url = "/projects/sapetinga-restaurant/";        check = "hard little lot" }
 )
 

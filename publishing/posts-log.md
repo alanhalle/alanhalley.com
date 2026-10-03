@@ -1,5 +1,19 @@
 # Posts Log
 
+## 2026-10-04 — Essay published: What a Bend Buys
+
+**URL:** https://alanhalley.com/writing/what-a-bend-buys/
+**Type:** Software Essay (nuclear)
+**Draft origin:** `writing/what-a-bend-buys/draft-v1.md`
+
+Essay for the slit-gap paper (Zenodo DOI 10.5281/zenodo.23128116, archive 10.5281/zenodo.23128092).
+32 gap shapes on free Colab vs JAERI's 1–2 weeks per run in 1997; the one-line rule; width matters
+most; bends give diminishing returns and partly move dose sideways (the 1984 finding again); one bend
+~2x worse than the rule. Claims taken back after GPT-6 Astra and Gemini review (bend angle, width
+mechanism). Ends "We're not out of a job yet." Cross-linked from /projects/starfire/.
+
+Social: none drafted.
+
 ## 2026-10-03 — Essay published: The High Road
 
 **URL:** https://alanhalley.com/writing/the-high-road/

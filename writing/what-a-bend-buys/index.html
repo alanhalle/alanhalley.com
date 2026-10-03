@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a Bend Buys - Alan Halley</title>
+  <link rel="canonical" href="https://alanhalley.com/writing/what-a-bend-buys/" />
+  <meta name="description" content="What a Bend Buys — how much each bend in a fusion shield gap actually reduces neutron streaming, from 32 gap shapes run on free cloud computing." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --accent: #4f8ef7;
+      --text: #e8eaf0;
+      --muted: #8b90a0;
+      --border: #2a2d3a;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-nav { border-bottom: 1px solid var(--border); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .site-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand:hover { text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .article-header,
+    article,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .article-header {
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .dek,
+    .meta,
+    .back-link {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .dek {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    article {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 1.15rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      max-width: 680px;
+    }
+
+    em { font-style: italic; }
+
+    .formula {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 1rem;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.8rem 1rem;
+      overflow-x: auto;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+      max-width: 680px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/" class="brand">Alan Halley</a>
+      <div class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/writing/">Writing</a>
+        <a href="/projects/">Projects</a>
+        <a href="/#work">Work With Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="article-header">
+    <div class="eyebrow">Essay</div>
+    <h1>What a Bend Buys</h1>
+    <p class="dek">Thirty-two gap shapes, three days on a free computer, and a rule of thumb for a question I first asked in 1984.</p>
+    <div class="meta">Nuclear · Fusion Shielding</div>
+    <a href="/writing/" class="back-link">Back to writing</a>
+  </div>
+
+  <article>
+    <p>A fusion reactor's shield can't be built in one piece. It goes up in sectors, and every joint between sectors is a gap that neutrons can stream through. The standard fix is to bend the gap, as a step, a dog-leg or a castellated joint, so that no straight line runs from the plasma to the back of the shield.</p>
+
+    <p>In 1984 I calculated how much a step helps, for the STARFIRE reactor design, in my master's thesis. The answer then was that a step doesn't stop the streaming so much as move it: the hot spot behind the shield shifts sideways, and the total gets through anyway. Earlier this year I <a href="/projects/starfire/">reproduced that study</a> with modern open-source software.</p>
+
+    <p>That left a question I never had the computer time to ask. How much does each bend actually buy? If the gap is 2 cm wide instead of 3, or has four bends instead of two, how much less gets through?</p>
+
+    <h2>What I ran</h2>
+
+    <p>Thirty-two gap shapes through the same 108 cm shield: straight, tilted, chevron, zigzag, stepped, castellated, and a family of "trapezoid" gaps that let me change one thing at a time. Width, number of bends, and how far past blocked the line of sight is. Twenty-seven runs on that family alone, plus replicates and checks.</p>
+
+    <p>Each run took about 35 minutes of computer time on Google's free Colab tier. The Japanese team that measured gap streaming at JAERI in 1997 wrote that their calculations took one to two weeks each on a workstation.</p>
+
+    <h2>What came out</h2>
+
+    <p>Closing the line of sight is the big step. An open 2 cm gap lets through about 300 times the dose of solid shield near its exit. Bend it just enough to block the view and that drops to between 2 and 28 times, depending on the shape.</p>
+
+    <p>After that, three numbers explain most of it, and they fit in one line:</p>
+
+    <p class="formula">excess ≈ 1.7 × width^2.9 × bends^-0.8 × exp(-0.19 × margin)</p>
+
+    <p>Width matters most. Through an open gap, the dose rises with the square of the width. Through a blocked gap it rises faster, with an exponent near 3. A 2 cm gap that opens to 2.5 cm in assembly lets through about twice as much. Fit-up tolerance is the biggest lever.</p>
+
+    <p>Bends help, with diminishing returns. Going from 2 to 4 bends cuts the dose near the exit by about 40%. Going from 4 to 8 buys much less.</p>
+
+    <p>And the 1984 finding came back. Measured across the whole back of the shield instead of just behind the gap, bends help noticeably less. Part of what a bend does is spread the dose sideways. Forty-two years later, same answer.</p>
+
+    <p>One bend is a poor bargain. The single-bend chevrons leaked about twice what the rule predicts for one bend.</p>
+
+    <h2>The claims I took back</h2>
+
+    <p>As with the last paper, I gave the draft to the competition before publishing: OpenAI's GPT-6 Astra and Google's Gemini, told to find what was wrong, not to polish the writing.</p>
+
+    <p>Both picked the same weakest claim: that the angle of a bend doesn't matter. I had one pair of runs, a sharp 90° corner against a shallow 15° one, 10% apart. That isn't evidence that angle doesn't matter. It's evidence that one pair can't tell. The claim is gone.</p>
+
+    <p>Astra also caught a piece of physics I had written to explain the width result. It was wrong, and it's gone too. The paper now reports what the numbers show and doesn't pretend to explain it.</p>
+
+    <p>Their questions sent me back to the computer three more times: runs with the variance-reduction shortcuts turned off, at three widths, to check they weren't biasing the answers (they weren't), and repeats of the points that looked suspicious. One of those repeats confirmed something new: with several bends, the width dependence gets even steeper between 3 and 4 cm. The simple rule averages over that.</p>
+
+    <p>Then a second round of review. Astra's one remaining objection: I had called a dose tally "total leakage," and it isn't, quite. Fixed.</p>
+
+    <h2>Back of the envelope</h2>
+
+    <p>So what is the rule good for? Comparing designs. Narrow the gap first, block the line of sight, add a few bends, and expect diminishing returns after four. Within its range it's good to about 20%.</p>
+
+    <p>It is not a substitute for the transport calculation. It's tied to this shield and this source, and it underpredicts single bends by a factor of two.</p>
+
+    <p>In 1984 I had the question and no computer time. In 1997 the experts had the computer and needed two weeks a run. This year I had three days, a free cloud account and a machine that writes the code. We're not out of a job yet. The rule tells you which designs are worth running. Somebody still has to run them.</p>
+
+    <p>The paper: <a href="https://doi.org/10.5281/zenodo.23128116" target="_blank" rel="noopener">Width, Bends and Line of Sight</a>. Everything behind it, including every run, both reviews and my responses: <a href="https://doi.org/10.5281/zenodo.23128092" target="_blank" rel="noopener">the archive</a>.</p>
+  </article>
+  <footer>
+    <span>&copy; 2026 Alan Halley</span>
+    <span>Essay published on alanhalley.com</span>
+  </footer>
+</body>
+</html>
