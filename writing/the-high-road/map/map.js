@@ -24,7 +24,7 @@ const P = {
   collegemound:[39.623,-92.573], excello:[39.636,-92.476], cox:[39.637,-92.383], woodville:[39.620,-92.336],
   macon:[39.745,-92.477], vincennes:[38.677,-87.528], salemil:[38.627,-88.946], danville:[38.911,-91.535],
   columbia:[38.951,-92.334], sturgeon:[39.234,-92.281], dryden:[36.774,-82.939], pennington:[36.758,-83.027],
-  cincinnati:[39.103,-84.512], narrows:[39.612,-92.468], dan:[39.6073602,-92.4794674], patents:[39.6130,-92.3225], mtsalem:[39.6227,-92.4867], friendship:[39.6619,-92.4244]
+  cincinnati:[39.103,-84.512], narrows:[39.612,-92.468], dan:[39.6073602,-92.4794674], patents:[39.6130,-92.3225], narrowstwp:[39.6667,-92.4167], mtsalem:[39.6227,-92.4867], friendship:[39.6619,-92.4244]
 };
 const line = (pts, color, dash, label) => L.polyline(pts.map(k => P[k]), { color, weight:4, opacity:.9, dashArray:dash }).bindTooltip(label, { sticky:true });
 
@@ -85,6 +85,7 @@ const hpDots = L.layerGroup([
 ]);
 const hatDots = L.layerGroup([
   dot('dryden', C.hat, '<b>Dryden, Lee County, Virginia</b><br>Hattie B. Sexton born 11 Nov 1899 (Find a Grave). Sister Carrie born in Virginia 1904.'),
+  dot('narrowstwp', C.hat, '<b>Narrows Township, Macon County</b><br>1910 census, 4 May 1910: Joseph S. Sexton, 36; Mollie, 28; children Lonnie?, Hattie (11), Garnett and Carrie, all born Virginia. Farming and coal mine?. Adam Sexton’s family next door.<br>The same township as the Halley land; Hattie married William Lloyd Halley six years later.<br><i>Dot at the township center (Wikidata), not the house. Source: 1910 census, ED 89, sheet 14A, from Ronda.</i>', 7),
   dot('moberly', C.hat, '<b>Moberly, Randolph County</b><br>Sister Hester born in Randolph County 1913 (town not known). Father a coal miner. Moberly is where the rail hypothesis ends.', 6),
   dot('macon', C.hat, '<b>Macon</b><br>Hattie married William Lloyd Halley 1916 (about 16). Died 15 Dec 1979; Oakwood Cemetery.<br>William Lloyd retired to Macon, house on Highway 63. The street is commercial now; the house may be gone.')
 ]);
@@ -102,7 +103,7 @@ L.control.layers(BASES, {
 
 // Name labels for the close-in places, shown only when zoomed in far enough to read them.
 const LABELS = { cox:'Cox', excello:'Excello', mtsalem:'Mount Salem', friendship:'Friendship Baptist', collegemound:'College Mound',
-                 woodville:'Woodville', narrows:'The Narrows', patents:'Henry’s land (1837–38)', dan:'Dan’s farm (1995–96)', rocheport:'Rocheport', franklin:'Franklin', fayette:'Fayette', macon:'Macon (Oakwood)', huntsville:'Huntsville', moberly:'Moberly', jacksonville:'Jacksonville' };
+                 woodville:'Woodville', narrows:'The Narrows', patents:'Henry’s land (1837–38)', narrowstwp:'Narrows Twp. (Sextons, 1910)', dan:'Dan’s farm (1995–96)', rocheport:'Rocheport', franklin:'Franklin', fayette:'Fayette', macon:'Macon (Oakwood)', huntsville:'Huntsville', moberly:'Moberly', jacksonville:'Jacksonville' };
 const labels = L.layerGroup(Object.entries(LABELS).map(([k, t]) =>
   L.marker(P[k], { icon: L.divIcon({ className:'', html:`<span style="color:#e6e8ee;font-size:12.5px;white-space:nowrap;text-shadow:0 0 3px #000,0 0 3px #000;margin-left:10px">${t}</span>`, iconSize:[0,0], iconAnchor:[-2,8] }), interactive:false })));
 const toggleLabels = () => map.getZoom() >= 9 ? labels.addTo(map) : labels.remove();
