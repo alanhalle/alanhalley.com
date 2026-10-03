@@ -1,5 +1,19 @@
 # Posts Log
 
+## 2026-10-03 — Essay published: The High Road
+
+**URL:** https://alanhalley.com/writing/the-high-road/
+**Type:** Memoir
+**Draft origin:** `writing/the-high-road/draft-v1.md`
+
+Sequel to *Henry and Polly*. Alan's search for the 1832 route: the AI's confident Franklin–Huntsville–
+College Mound route taken apart by the 1884 county history, Waller (1920), the BLM survey grid and USGS
+elevation; Rocheport the likeliest landing; Henry's 1837–38 patents ~0.8 mi SE of Woodville; the lost
+Halley Cemetery (Nancy). Ends on Earl's one sentence. Companion map at `/writing/the-high-road/map/`
+and Google Earth Pro flyovers (`henry-polly-flyover.kml`). *Henry and Polly* got a follow-up link.
+
+Social: none drafted.
+
 ## 2026-10-02 — Essay published: Three Days
 
 **URL:** https://alanhalley.com/writing/three-days/

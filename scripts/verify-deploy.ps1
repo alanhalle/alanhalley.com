@@ -7,7 +7,10 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = "hire-the-right-developer-for-your-project" }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
-    @{ url = "/writing/";                             check = "/writing/three-days/" }
+    @{ url = "/writing/";                             check = "/writing/the-high-road/" }
+    @{ url = "/writing/the-high-road/";               check = "Earl told me in one sentence" }
+    @{ url = "/writing/the-high-road/map/";           check = "Companion to" }
+    @{ url = "/writing/the-high-road/henry-polly-flyover.kml"; check = "Fly from Rocheport" }
     @{ url = "/writing/three-days/";                  check = "four pages of boilerplate" }
     @{ url = "/writing/the-last-80-percent/";         check = "darthvader.mba" }
     @{ url = "/writing/convincing-is-not-correct/";    check = "the-ranking-depends-on-the-ruler" }
