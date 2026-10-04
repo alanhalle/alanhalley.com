@@ -12,7 +12,13 @@ most; bends give diminishing returns and partly move dose sideways (the 1984 fin
 ~2x worse than the rule. Claims taken back after GPT-6 Astra and Gemini review (bend angle, width
 mechanism). Ends "We're not out of a job yet." Cross-linked from /projects/starfire/.
 
-Social: none drafted.
+Zenodo paper + archive published 2026-10-04. ResearchGate: https://www.researchgate.net/publication/415203914.
+SSRN: https://ssrn.com/abstract=7558398 (added to Zenodo as isIdenticalTo, 2026-10-04).
+projectmanagement.com: skipped by Alan (no interest in nuclear).
+
+Social: OpenMC Discourse new topic **posted 2026-10-04** (plain-text version: Discourse blocked URLs and
+formatting for this account, so DOIs given as text). LinkedIn draft in
+`workspace/Neutron Streaming/sharing-posts-2026-10-04.md`, **not posted**; suggested Tue 10/6 or Wed 10/7.
 
 ## 2026-10-03 — Essay published: The High Road
 
