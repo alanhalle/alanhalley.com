@@ -7,7 +7,12 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = "hire-the-right-developer-for-your-project" }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
-    @{ url = "/writing/";                             check = "/writing/what-a-bend-buys/" }
+    @{ url = "/writing/";                             check = "/writing/france-1982-getting-there/" }
+    @{ url = "/writing/france-1982-getting-there/";   check = "Filet mignon was the only French food I knew" }
+    @{ url = "/writing/france-1982-living-there/";    check = "left me for their next victim" }
+    @{ url = "/writing/france-1982-barcelona-and-mallorca/"; check = "No, the English word" }
+    @{ url = "/writing/france-1982-doc/";             check = "A paid vacation!" }
+    @{ url = "/writing/france-1982-going-home/";      check = "And where is home, sir?" }
     @{ url = "/writing/what-a-bend-buys/";            check = "Somebody still has to run them" }
     @{ url = "/writing/the-high-road/";               check = "Earl told me in one sentence" }
     @{ url = "/writing/the-high-road/map/";           check = "Companion to" }

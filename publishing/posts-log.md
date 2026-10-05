@@ -1,5 +1,23 @@
 # Posts Log
 
+## 2026-10-05 — Memoir published: France, 1982 (five parts)
+
+**URLs:** https://alanhalley.com/writing/france-1982-getting-there/ (Part 1; each part links the others)
+- /writing/france-1982-living-there/
+- /writing/france-1982-barcelona-and-mallorca/
+- /writing/france-1982-doc/
+- /writing/france-1982-going-home/
+
+**Type:** Memoir
+**Draft origin:** `Nimbalyst/stories/france-1982/part-*-v1.md` (copyedited, with change lists); `draft-v1.md` in each folder is the published text.
+
+The 1982 EDF internship at Les Renardières. Getting there (ends on filet mignon); living there (the
+work, Moret, Paris, the $400 Nissan, Bonn, the border guards); Barcelona and Mallorca (calamari);
+Doc (Munich to Minori, the bank strike, Naples, the Englishman's loan, "A paid vacation!"); going
+home ("Tomorrow."). One index card for the series. First names only (Jean-Pierre, Doc).
+
+Social: none drafted.
+
 ## 2026-10-04 — Essay published: What a Bend Buys
 
 **URL:** https://alanhalley.com/writing/what-a-bend-buys/
