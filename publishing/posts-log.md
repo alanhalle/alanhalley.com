@@ -32,7 +32,8 @@ elevation; Rocheport the likeliest landing; Henry's 1837–38 patents ~0.8 mi SE
 Halley Cemetery (Nancy). Ends on Earl's one sentence. Companion map at `/writing/the-high-road/map/`
 and Google Earth Pro flyovers (`henry-polly-flyover.kml`). *Henry and Polly* got a follow-up link.
 
-Social: none drafted.
+Social: LinkedIn draft (map + flyovers angle) in `writing/the-high-road/linkedin-draft.md`, **not posted**;
+scheduled Wed 10/7 with image `preview-ridge.png`.
 
 ## 2026-10-02 — Essay published: Three Days
 
@@ -45,8 +46,7 @@ Hiring when writing became free. Alan gave vendors 2–3 weeks for RFPs; today h
 screening question, believe what you can verify (live software), small paid first milestone. Closing
 line links the new "Hire a Developer" gig (Upwork + Fiverr).
 
-Social: LinkedIn draft in `writing/three-days/linkedin-draft.md`, **not posted**, queued for Mon 10/5
-in `Nimbalyst/workspace/posting-schedule.md`.
+Social: LinkedIn **posted Mon 2026-10-05** (draft in `writing/three-days/linkedin-draft.md`).
 
 ## 2026-09-30 — Essay published: The Ranking Depends on the Ruler
 
