@@ -18,7 +18,7 @@ projectmanagement.com: skipped by Alan (no interest in nuclear).
 
 Social: OpenMC Discourse new topic **posted 2026-10-04** (plain-text version: Discourse blocked URLs and
 formatting for this account, so DOIs given as text). LinkedIn draft in
-`workspace/Neutron Streaming/sharing-posts-2026-10-04.md`, **not posted**; suggested Tue 10/6 or Wed 10/7.
+`workspace/Neutron Streaming/sharing-posts-2026-10-04.md`, **not posted**; scheduled Tue 10/13.
 
 ## 2026-10-03 — Essay published: The High Road
 
