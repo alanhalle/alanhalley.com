@@ -1,5 +1,12 @@
 # Posts Log
 
+## 2026-10-06 — projectmanagement.com reply: AI and sprint planning
+
+Reply in the "How Should AI Change Sprint Planning?" thread (original post promoted Sharkly.ai). Alan's
+question, roughly: DHH says he generated 150,000 lines of code in August 2026 and that most coding
+is now done by AI agents (Rails World 2026 keynote, verified); how does that affect sprint planning
+and execution? No link. Alan's read of the thread: rearranging deck chairs.
+
 ## 2026-10-05 — Memoir published: France, 1982 (five parts)
 
 **URLs:** https://alanhalley.com/writing/france-1982-getting-there/ (Part 1; each part links the others)
