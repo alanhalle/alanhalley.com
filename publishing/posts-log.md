@@ -1,5 +1,12 @@
 # Posts Log
 
+## 2026-10-06 — projectmanagement.com comment: AI-powered PM operating system
+
+On Joe Wynne's article "Building Your AI-Powered Personal PM Operating System" (Oct 2, 2026).
+Alan's comment: "How do you check what AI produces before it goes to leadership?" The two earlier
+comments were "thank you for sharing". The article's eight steps never address verification; the
+question previews the how-I-use-AI essay (`workspace/essay-notes-how-i-use-ai.md`).
+
 ## 2026-10-06 — projectmanagement.com reply: AI and sprint planning
 
 Reply in the "How Should AI Change Sprint Planning?" thread (original post promoted Sharkly.ai). Alan's
