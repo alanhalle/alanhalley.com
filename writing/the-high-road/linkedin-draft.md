@@ -1,6 +1,6 @@
 # LinkedIn draft: The High Road map and flyovers
 
-Not posted. Image: `workspace/family-map/preview-ridge.png` (Alan approved 2026-10-05). Paragraphs are single lines on purpose: hard line breaks carry into LinkedIn.
+Posted 2026-10-07. Image: `workspace/family-map/preview-ridge.png` (Alan approved 2026-10-05). Paragraphs are single lines on purpose: hard line breaks carry into LinkedIn.
 
 ---
 

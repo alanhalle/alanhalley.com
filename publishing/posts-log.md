@@ -64,8 +64,8 @@ elevation; Rocheport the likeliest landing; Henry's 1837–38 patents ~0.8 mi SE
 Halley Cemetery (Nancy). Ends on Earl's one sentence. Companion map at `/writing/the-high-road/map/`
 and Google Earth Pro flyovers (`henry-polly-flyover.kml`). *Henry and Polly* got a follow-up link.
 
-Social: LinkedIn draft (map + flyovers angle) in `writing/the-high-road/linkedin-draft.md`, **not posted**;
-scheduled Wed 10/7 with image `preview-ridge.png`.
+Social: LinkedIn **posted Wed 2026-10-07** (map + flyovers angle, draft in
+`writing/the-high-road/linkedin-draft.md`, image `preview-ridge.png`).
 
 ## 2026-10-02 — Essay published: Three Days
 
