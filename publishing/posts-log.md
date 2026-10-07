@@ -14,6 +14,11 @@ question, roughly: DHH says he generated 150,000 lines of code in August 2026 an
 is now done by AI agents (Rails World 2026 keynote, verified); how does that affect sprint planning
 and execution? No link. Alan's read of the thread: rearranging deck chairs.
 
+**Follow-up 2026-10-07:** four replies (Riaz, Maddi: plan review time; Conte: agents replace 95% of
+Scrum; Porter: "why would this change sprint planning?"). Alan replied to Porter: the team shrinks to
+the people who decide what to build and check the results; sprint planning was built to coordinate
+coders; DHH is "a team of one plus an AI shed"; adversarial checks by multiple agents matter most.
+
 ## 2026-10-05 — Memoir published: France, 1982 (five parts)
 
 **URLs:** https://alanhalley.com/writing/france-1982-getting-there/ (Part 1; each part links the others)
