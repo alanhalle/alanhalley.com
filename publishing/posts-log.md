@@ -1,5 +1,11 @@
 # Posts Log
 
+## 2026-10-08 — LinkedIn: darthvader.mba, the build
+
+Build post (one Cloudflare Worker, D1, Stripe Checkout, webhook, review queue; "The build works. The
+product is another question."). "Betting market" replaced by "paid vote" (it isn't betting); Alan
+edited the wording before posting. Draft in `Nimbalyst/workspace/posting-schedule.md`.
+
 ## 2026-10-06 — projectmanagement.com comment: AI-powered PM operating system
 
 On Joe Wynne's article "Building Your AI-Powered Personal PM Operating System" (Oct 2, 2026).
@@ -18,6 +24,9 @@ and execution? No link. Alan's read of the thread: rearranging deck chairs.
 Scrum; Porter: "why would this change sprint planning?"). Alan replied to Porter: the team shrinks to
 the people who decide what to build and check the results; sprint planning was built to coordinate
 coders; DHH is "a team of one plus an AI shed"; adversarial checks by multiple agents matter most.
+Porter's answer (same day): if one person with agents replaces the team, he questions the need for
+sprints at all, not just sprint planning; by Theory of Constraints the bottleneck has moved from
+development to verification, so the question is how many verifiers keep up with the agents.
 
 ## 2026-10-05 — Memoir published: France, 1982 (five parts)
 
