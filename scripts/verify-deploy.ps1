@@ -5,7 +5,7 @@
 $base = "https://alanhalley.com"
 
 $pages = @(
-    @{ url = "/";                                     check = "hire-the-right-developer-for-your-project" }
+    @{ url = "/";                                     check = 'href="/shielding/">Details' }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
     @{ url = "/writing/";                             check = "/writing/france-1982-getting-there/" }
     @{ url = "/writing/france-1982-getting-there/";   check = "Filet mignon was the only French food I knew" }
@@ -37,8 +37,9 @@ $pages = @(
     @{ url = "/writing/doc/";                         check = "Doc" }
     @{ url = "/writing/my-florida-vacation/";         check = "Florida" }
     @{ url = "/about/";                               check = "Alan Halley" }
+    @{ url = "/shielding/";                         check = "I don't sign shielding reports" }
     @{ url = "/projects/";                            check = "Projects" }
-    @{ url = "/projects/starfire/";                    check = "/writing/what-a-bend-buys/" }
+    @{ url = "/projects/starfire/";                    check = "shielding calculations on contract" }
     @{ url = "/projects/sapetinga-restaurant/";        check = "hard little lot" }
 )
 

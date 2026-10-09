@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-09 — Site: /shielding/ services page
+
+New page https://alanhalley.com/shielding/ (OpenMC shielding calculations on contract, $100/hr,
+packages $200 / $750 / $2,000; "I calculate; your engineer signs"). Card added to the homepage Work
+With Me section; linked from /projects/starfire/. Same day: 5 outreach emails sent (Oxford Sigma,
+Thea, Proxima, Marvel Fusion, Focused Energy); LinkedIn headline adds "OpenMC Neutron Shielding
+Calculations". LinkedIn services post scheduled Oct 20, after the slit-gap post Oct 13. Plan:
+`Nimbalyst/workspace/shielding-services-marketing.md`.
+
 ## 2026-10-08 — LinkedIn: darthvader.mba, the build
 
 Build post (one Cloudflare Worker, D1, Stripe Checkout, webhook, review queue; "The build works. The
