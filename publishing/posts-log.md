@@ -1,5 +1,13 @@
 # Posts Log
 
+## 2026-10-10 — projectmanagement.com reply to Porter: the verification tax
+
+Second reply in the "How Should AI Change Sprint Planning?" thread, answering Porter's "how many
+verifiers keep up with the agents." Cited the NYT DealBook "verification tax" piece (10/10; only its
+headline and lede were readable) and the LLM benchmark: eight frontier models from three vendors;
+on the three harder problems the top two each ran 7 of 9, but only 4 and 2 were physically correct.
+Answer: verifiers keep up by making checks executable, not by reading faster. No link.
+
 ## 2026-10-09 — Site: /shielding/ services page
 
 New page https://alanhalley.com/shielding/ (OpenMC shielding calculations on contract, $100/hr,
