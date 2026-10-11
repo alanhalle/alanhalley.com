@@ -1,5 +1,13 @@
 # Posts Log
 
+## 2026-10-11 — Essay: From One Garage to Another
+
+https://alanhalley.com/writing/from-one-garage-to-another/ — Memoir, ~1,550 words. 1985: the 200-letter
+mail merge, Sargent & Lundy in Chicago, the drive west in the rusted Datsun, Pasadena (hotels, YMCA,
+Gina's back-house scam, the Greene & Greene carriage house), Parsons and the micromanagers, Palm
+Springs. Assembled from Alan's fragments, then rewritten by Alan. The carriage-house "remuddle"
+coda and the Eaton fire note left out by Alan's decision. No social posts yet.
+
 ## 2026-10-10 — projectmanagement.com reply to Porter: the verification tax
 
 Second reply in the "How Should AI Change Sprint Planning?" thread, answering Porter's "how many
