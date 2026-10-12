@@ -31,7 +31,7 @@ $pages = @(
     @{ url = "/writing/real-money-real-people/";      check = "Brief Work" }
     @{ url = "/writing/airport-to-beach/";            check = "beachburbs" }
     @{ url = "/writing/nao-sei-nada/";                check = "Não Sei Nada" }
-    @{ url = "/writing/easing-in/";                   check = "Second Brain" }
+    @{ url = "/writing/easing-in/";                   check = "How I Work, a series" }
     @{ url = "/writing/a-veritable-island/";          check = "island" }
     @{ url = "/writing/one-person-operating-system/"; check = "operating system" }
     @{ url = "/writing/the-go-between/";              check = "Graeber" }
