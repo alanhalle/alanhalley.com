@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-13 — LinkedIn: slit-gap paper, verification lead
+
+Posted the rewritten slit-gap post (draft in `Nimbalyst/workspace/Neutron Streaming/sharing-posts-2026-10-04.md`):
+opens on NYT DealBook's "verification tax" (10/10), then three checks — analog reruns (weight windows
+5x less efficient on the leakiest gap), the AI reviewers' shared target (bend-angle claim withdrawn:
+"one pair can't tell"), the JAERI comparison (2.7–8x off at depth). Links the essay What a Bend Buys and
+the Zenodo paper. Formatting didn't carry over from the chat copy; Alan inserted blank lines by hand.
+Services post still scheduled Tue 10/20. Mon 10/12 briefwork.io post skipped.
+
 ## 2026-10-11 — Essay: From One Garage to Another
 
 https://alanhalley.com/writing/from-one-garage-to-another/ — Memoir, ~1,550 words. 1985: the 200-letter
