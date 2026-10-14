@@ -5,8 +5,9 @@
 Added a one-line dated update at the end of
 https://alanhalley.com/writing/the-ranking-depends-on-the-ruler/: Gemini 4 Argon is in the benchmark
 archive v2.1 (10.5281/zenodo.23362569) as a later row, not in the paper; 7 of 15 ran, none that ran got
-the physics wrong, and most of the rest ran out of time. Replies drafted for the OpenMC Discourse thread and the
-projectmanagement.com "which AI will win" thread. Not posted.
+the physics wrong, and most of the rest ran out of time. Replies **posted 2026-10-14** in the OpenMC Discourse thread
+(the DOI as plain text, because Discourse rejected a doi.org link) and in the projectmanagement.com "which AI
+will win" thread. Text in `Nimbalyst/workspace/gemini4-replies-2026-10-14.md`.
 
 ## 2026-10-13 — LinkedIn: slit-gap paper, verification lead
 
