@@ -1,5 +1,13 @@
 # Posts Log
 
+## 2026-10-14 — Essay update: The Ranking Depends on the Ruler, Gemini 4 note
+
+Added a one-line dated update at the end of
+https://alanhalley.com/writing/the-ranking-depends-on-the-ruler/: Gemini 4 Argon is in the benchmark
+archive v2.1 (10.5281/zenodo.23362569) as a later row, not in the paper; 7 of 15 ran, none that ran got
+the physics wrong, and most of the rest ran out of time. Replies drafted for the OpenMC Discourse thread and the
+projectmanagement.com "which AI will win" thread. Not posted.
+
 ## 2026-10-13 — LinkedIn: slit-gap paper, verification lead
 
 Posted the rewritten slit-gap post (draft in `Nimbalyst/workspace/Neutron Streaming/sharing-posts-2026-10-04.md`):

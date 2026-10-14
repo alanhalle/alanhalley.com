@@ -21,7 +21,7 @@ $pages = @(
     @{ url = "/writing/three-days/";                  check = "four pages of boilerplate" }
     @{ url = "/writing/the-last-80-percent/";         check = "darthvader.mba" }
     @{ url = "/writing/convincing-is-not-correct/";    check = "the-ranking-depends-on-the-ruler" }
-    @{ url = "/writing/the-ranking-depends-on-the-ruler/"; check = "a sentence of mine I had to take back" }
+    @{ url = "/writing/the-ranking-depends-on-the-ruler/"; check = "Gemini 4 Argon is now in" }
     @{ url = "/writing/working-from-home-since-1975/"; check = "recreating that hallway" }
     @{ url = "/writing/less-than-two-dollars/";         check = "Flagrante" }
     @{ url = "/writing/full-moon/";                    check = "Rocheport" }
