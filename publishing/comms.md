@@ -4,7 +4,7 @@
 
 | Channel | Audience | Tone | Best for |
 |---------|----------|------|----------|
-| Indie Hackers | Friendly bootstrappers, founders | Honest, personal | Product launches, milestones, essays |
+| Indie Hackers | Friendly bootstrappers, founders | Honest, personal | Build stories only. **Removes ad-like posts; dropped as a sales channel 2026-09-28** |
 | Hacker News (Show HN) | Technical, skeptical | Factual, no marketing | Launches with a real technical angle |
 | X (Twitter) | General / builders | Punchy | Everything — short version of IH post |
 | LinkedIn | Professional contacts | Longer, more context | Essays, career-adjacent pieces |
@@ -19,17 +19,10 @@
 4. Post to HN only if there's a genuine technical angle — hostile to marketing
 5. LinkedIn when the piece has professional relevance
 
-## X formatting notes
+## Formatting
 
-- 280 char limit. Write body first, add URL last, trim from the bottom.
-- Arrows (→) count as 1 char. URLs count as 23 chars regardless of length.
-- No hashtags — they read as spam in this context.
-
-## Hacker News formatting
-
-- Title must start with "Show HN:" for product posts
-- Body: stack, what it does, one honest number. No superlatives.
-- Post on weekdays, morning US time for visibility.
+Per-site editor quirks (character limits, line breaks, blocked links, thumbnails) are in
+`posting-rules.md`, the only copy. Check it before drafting.
 
 ## Record
 
