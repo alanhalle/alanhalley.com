@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-15 — LinkedIn: Gemini 4 benchmark follow-up
+
+Posted in the Thu 10/15 slot instead of TrikeScore (Alan: likely more interest than the trike story;
+the benchmark announcement is the best-performing LinkedIn post, 408 impressions in 4 days). Gemini 4
+Argon as an add-on row, 7 of 15 scripts ran, none that ran got the physics wrong, most failures ran out
+of time ("does it finish?"). Links archive v2.1, https://doi.org/10.5281/zenodo.23362569. Draft text
+in `Nimbalyst/workspace/gemini4-replies-2026-10-14.md`. Not confirmed which first line went up:
+"nine AI models" or the "eight frontier models … plus Gemma" version.
+
 ## 2026-10-14 — Essay update: The Ranking Depends on the Ruler, Gemini 4 note
 
 Added a one-line dated update at the end of
