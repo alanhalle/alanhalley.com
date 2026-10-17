@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-17 — Essay: How I Write
+
+https://alanhalley.com/writing/how-i-write/ — Software Essay. The Memoirs database (Supabase Postgres,
+ten tables) as a dating tool: 50+ homes, 27 cars, school years; the DEC terminal dated through
+Alexander → Dartmouth → the 911T and Garry's "sold you in 1975" email; the burned-house tables; the
+"second memory" origin. First essay with a figure: `how-it-works.svg`, an ERD of cars/home/year/work
+with the linking rows highlighted (PNG copy for LinkedIn in `Nimbalyst/workspace/how-it-works-preview.png`).
+Assembled from Alan's own sentences (sessions 2026-10-05, -13, -17). LinkedIn blurb: not posted yet.
+
 ## 2026-10-15 — LinkedIn: Gemini 4 benchmark follow-up
 
 Posted in the Thu 10/15 slot instead of TrikeScore (Alan: likely more interest than the trike story;
