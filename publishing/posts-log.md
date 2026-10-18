@@ -1,5 +1,12 @@
 # Posts Log
 
+## 2026-10-18 — projectmanagement.com reply: "most challenging Gen AI" thread
+
+Alan wrote his own reply instead of the draft: "I've previously built mobile apps without AI, and have
+built web apps this year with AI. How was Gen AI used in the project? Was the project successful? What
+challenges did you encounter using Gen AI?" Asked the poster, whose answer was a real-estate app with a
+vague "first-in-class … entire customer journey" goal, where GenAI came in.
+
 ## 2026-10-18 — projectmanagement.com reply: first GenAI hallucination
 
 Reply in the "first memorable GenAI hallucination" thread (poster: a PMP/B.Eng clean-energy PM in
