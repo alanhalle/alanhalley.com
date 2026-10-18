@@ -14,6 +14,7 @@ $pages = @(
     @{ url = "/writing/france-1982-barcelona-and-mallorca/"; check = "No, the English word" }
     @{ url = "/writing/france-1982-doc/";             check = "More about Doc" }
     @{ url = "/writing/france-1982-going-home/";      check = "And where is home, sir?" }
+    @{ url = "/writing/";                             check = "zenodo.23458007" }
     @{ url = "/writing/how-i-write/";                 check = "Which August did I go to France" }
     @{ url = "/writing/how-i-write/how-it-works.svg?v=2"; check = "rows that dated the DEC" }
     @{ url = "/writing/what-a-bend-buys/";            check = "Somebody still has to run them" }
