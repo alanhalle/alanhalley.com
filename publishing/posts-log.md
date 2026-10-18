@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-18 — projectmanagement.com reply: first GenAI hallucination
+
+Reply in the "first memorable GenAI hallucination" thread (poster: a PMP/B.Eng clean-energy PM in
+Ontario). Benchmark as the example: 135 AI-written OpenMC inputs, 9 models, 3 vendors; the early
+Claude-only round where one version passed the run check twice as often and got the physics wrong
+every time it could be graded; "It didn't lower my trust. It moved it from the output to the check."
+Links the benchmark paper, https://doi.org/10.5281/zenodo.23067522. Text in the session of 2026-10-18.
+Alan: the PMs there don't ask specific questions; he isn't learning much from them.
+
 ## 2026-10-17 — Essay: How I Write
 
 https://alanhalley.com/writing/how-i-write/ — Software Essay. The Memoirs database (Supabase Postgres,
