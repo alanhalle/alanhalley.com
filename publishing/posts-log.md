@@ -1,5 +1,13 @@
 # Posts Log
 
+## 2026-10-20 — LinkedIn: How I Write
+
+Draft B from `workspace/linkedin-drafts-2026-10-17.md`, text as drafted: 50+ homes, 27 cars, "When was
+that?", the Porsche 911T email ("sold you in 1975"), the Supabase homes/cars database. Image:
+`workspace/how-it-works-preview.png` (the ERD, 960×440). With the image attached, LinkedIn would not
+take the essay link in the post, so Alan put https://alanhalley.com/writing/how-i-write/ in the first
+comment. Same day: the ERD added to the essay as its `og:image`, so a link-only post now shows it in the card.
+
 ## 2026-10-18 — projectmanagement.com reply: "most challenging Gen AI" thread
 
 Alan wrote his own reply instead of the draft: "I've previously built mobile apps without AI, and have
@@ -23,7 +31,7 @@ ten tables) as a dating tool: 50+ homes, 27 cars, school years; the DEC terminal
 Alexander → Dartmouth → the 911T and Garry's "sold you in 1975" email; the burned-house tables; the
 "second memory" origin. First essay with a figure: `how-it-works.svg`, an ERD of cars/home/year/work
 with the linking rows highlighted (PNG copy for LinkedIn in `Nimbalyst/workspace/how-it-works-preview.png`).
-Assembled from Alan's own sentences (sessions 2026-10-05, -13, -17). LinkedIn blurb: not posted yet.
+Assembled from Alan's own sentences (sessions 2026-10-05, -13, -17). LinkedIn blurb: posted 2026-10-20 (entry above).
 
 ## 2026-10-15 — LinkedIn: Gemini 4 benchmark follow-up
 
