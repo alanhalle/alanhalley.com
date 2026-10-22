@@ -1,5 +1,22 @@
 # Posts Log
 
+## 2026-10-22 — LinkedIn: From One Garage to Another
+
+First social post for the 2026-10-11 essay. Alan's sentences from the essay, trimmed: Dec 1984, new NE
+degree and no money, 200-company mailing list, mail merge printed on a 20-foot IBM laser printer,
+expected no replies, two interviews, two offers, Chicago and Pasadena. Link only
+(https://alanhalley.com/writing/from-one-garage-to-another/), no `og:image` on the page, so a plain card.
+Coincides with the start of the 2026 cold-email outreach (`workspace/cold-outreach/`).
+
+## 2026-10-22 — LifeStarr community intro
+
+Intro posted in the LifeStarr solopreneur community (lifestarr.com, free tier, ~500 members; run by
+Joe Rando and Carly Ries, authors of *Solopreneur Business for Dummies*). Text: American on the beach in Brazil, freelance
+PM (Cisco, Genentech, Los Alamos), two agencies (AppEngineers ~20 apps), this year's AI builds
+(briefwork.io, QR menus, darthvader.mba, the nine-model benchmark), nuclear engineer; works with early
+founders, hourly, part-time; link to alanhalley.com/projects/. Alan: they sell training and a PM system; he isn't
+buying, there to meet people.
+
 ## 2026-10-20 — LinkedIn: How I Write
 
 Draft B from `workspace/linkedin-drafts-2026-10-17.md`, text as drafted: 50+ homes, 27 cars, "When was
@@ -66,7 +83,7 @@ https://alanhalley.com/writing/from-one-garage-to-another/ — Memoir, ~1,550 wo
 mail merge, Sargent & Lundy in Chicago, the drive west in the rusted Datsun, Pasadena (hotels, YMCA,
 Gina's back-house scam, the Greene & Greene carriage house), Parsons and the micromanagers, Palm
 Springs. Assembled from Alan's fragments, then rewritten by Alan. The carriage-house "remuddle"
-coda and the Eaton fire note left out by Alan's decision. No social posts yet.
+coda and the Eaton fire note left out by Alan's decision. LinkedIn: posted 2026-10-22 (entry above).
 
 ## 2026-10-10 — projectmanagement.com reply to Porter: the verification tax
 
