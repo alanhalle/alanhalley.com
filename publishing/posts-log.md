@@ -786,6 +786,10 @@ Alan's call whether to make two rejections public.
 
 ## Essay Candidates — Not Yet Written
 
+- **The Basecamp rules** (Alan, 2026-10-23) — agrees with 37signals: no meetings except twice a year, no status reports, no Slack, no phone calls, no sprints, project data in one place; but .md files, and keeps his weekly status report. Shape Up vs. "most of my bets involve only my time." A methodology per project; PMBOK: "unique." Material in `workspace/essay-two-years-behind/draft-v2.md`.
+- **PMs and AI** (Alan, 2026-10-23) — projectmanagement.com threads on AI for sprints and meeting minutes vs. DHH (150,000 lines in August, Rails World 2026). Same draft.
+- **The overhang / the curve** (Alan, 2026-10-23) — Mollick's overhang; METR time horizons, 4 minutes to 17 hours, doubling ~4 months; "hard to predict when the curve goes vertical"; crystal balls. Chart ready: `workspace/essay-two-years-behind/metr-horizons.png`.
+
 - **Partially Ameliorated** — The second brain journey: Notion → Obsidian → Emergent → R$700 OpenClaw → Nimbalyst → hook writing to empty folder for months. Draft at `workspace/second-brain-essay-draft.md`. Theme: Computing Journey.
 - **Brief Work / Razorpay** — Designing a product in production. The Razorpay phone number friction. What you learn by doing that you can't learn in advance.
 - **"Shipped more"** — One paragraph. More projects shipped than most people who write about shipping projects.
