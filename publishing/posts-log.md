@@ -1,5 +1,11 @@
 # Posts Log
 
+## 2026-10-23 — Essay update: What a Bend Buys, gap-shapes figure
+
+Added a dark-theme figure of nine of the 32 gap shapes (to scale, from the run geometry code) after
+"What I ran", and made a 1200×630 version the page's `og:image`, so a link-only LinkedIn post shows
+the shapes in its card. Source: `Nimbalyst/workspace/Neutron Streaming/dataset/paper/make_web_figure.py`.
+
 ## 2026-10-22 — LinkedIn: From One Garage to Another
 
 First social post for the 2026-10-11 essay. Alan's sentences from the essay, trimmed: Dec 1984, new NE

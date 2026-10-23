@@ -19,6 +19,7 @@ $pages = @(
     @{ url = "/writing/how-i-write/";                 check = "how-i-write/how-it-works.png" }
     @{ url = "/writing/how-i-write/how-it-works.svg?v=2"; check = "rows that dated the DEC" }
     @{ url = "/writing/what-a-bend-buys/";            check = "Somebody still has to run them" }
+    @{ url = "/writing/what-a-bend-buys/";            check = "what-a-bend-buys/gap-shapes-og.png" }
     @{ url = "/writing/the-high-road/";               check = "Earl told me in one sentence" }
     @{ url = "/writing/the-high-road/map/";           check = "Companion to" }
     @{ url = "/writing/the-high-road/henry-polly-flyover.kml"; check = "Fly from Rocheport" }

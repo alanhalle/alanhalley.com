@@ -6,6 +6,14 @@
   <title>What a Bend Buys - Alan Halley</title>
   <link rel="canonical" href="https://alanhalley.com/writing/what-a-bend-buys/" />
   <meta name="description" content="What a Bend Buys — how much each bend in a fusion shield gap actually reduces neutron streaming, from 32 gap shapes run on free cloud computing." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alanhalley.com/writing/what-a-bend-buys/" />
+  <meta property="og:title" content="What a Bend Buys" />
+  <meta property="og:description" content="Thirty-two gap shapes, three days on a free computer, and a rule of thumb for a question I first asked in 1984." />
+  <meta property="og:image" content="https://alanhalley.com/writing/what-a-bend-buys/gap-shapes-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0f14'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%234285F4'>AH</text></svg>">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -176,6 +184,26 @@
       gap: 0.75rem;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
+
+    figure {
+      margin: 2rem 0 2.2rem;
+      max-width: 680px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    figcaption {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+    }
   </style>
 </head>
 <body>
@@ -209,6 +237,11 @@
     <h2>What I ran</h2>
 
     <p>Thirty-two gap shapes through the same 108 cm shield: straight, tilted, chevron, zigzag, stepped, castellated, and a family of "trapezoid" gaps that let me change one thing at a time. Width, number of bends, and how far past blocked the line of sight is. Twenty-seven runs on that family alone, plus replicates and checks.</p>
+
+    <figure>
+      <img src="gap-shapes.png" width="1920" height="832" alt="Nine of the gap shapes, drawn to scale as tall grey shield slabs with a blue 2 cm gap through each: straight, tilted 10 degrees, chevron, zigzag, stepped, castellated, a trapezoid with 2 bends, one with 8 bends, and one with 8 bends at 15 degrees. Arrows below each show neutrons entering from the bottom.">
+      <figcaption>Nine of the 32 shapes, drawn to scale from the geometry code that ran them. Neutrons enter from below.</figcaption>
+    </figure>
 
     <p>Each run took about 35 minutes of computer time on Google's free Colab tier. The Japanese team that measured gap streaming at JAERI in 1997 wrote that their calculations took one to two weeks each on a workstation.</p>
 
