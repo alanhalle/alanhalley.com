@@ -1,5 +1,10 @@
 # Posts Log
 
+## 2026-10-26 — LinkedIn: gap shapes (What a Bend Buys, second post)
+
+Posted by Alan. Monday slot. Draft: `Nimbalyst/workspace/Neutron Streaming/linkedin-draft-2026-10-26-gap-shapes.md`;
+link card uses the page's new `og:image`, the colored figure of nine gap shapes.
+
 ## 2026-10-23 — Essay update: What a Bend Buys, gap-shapes figure
 
 Added a dark-theme figure of nine of the 32 gap shapes (to scale, from the run geometry code) after
