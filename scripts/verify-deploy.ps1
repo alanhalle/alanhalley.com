@@ -7,7 +7,10 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = 'href="/shielding/">Details' }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
-    @{ url = "/writing/";                             check = "/writing/from-one-garage-to-another/" }
+    @{ url = "/writing/";                             check = "/writing/one-year-in/" }
+    @{ url = "/writing/one-year-in/";                 check = "20 LinkedIn posts" }
+    @{ url = "/writing/one-year-in/timeline.js?v=1";  check = "Data frozen at publication, 2026-10-26" }
+    @{ url = "/writing/one-year-in/";                 check = "one-year-in-og.png" }
     @{ url = "/writing/from-one-garage-to-another/"; check = "Those beach party movies" }
     @{ url = "/writing/france-1982-getting-there/";   check = "Filet mignon was the only French food I knew" }
     @{ url = "/writing/france-1982-living-there/";    check = "left me for their next victim" }

@@ -1,5 +1,14 @@
 # Posts Log
 
+## 2026-10-26 — Essay: One Year In
+
+https://alanhalley.com/writing/one-year-in/ — published three days ahead of the 10/29 target. "What I've
+accomplished with AI in the past year, starting at zero." One lead-in sentence, the interactive timeline
+(code in `timeline.js`, data frozen at 2026-10-26: 26 essays, 20 LinkedIn posts incl. today's gap-shapes
+post), and the month-by-month summary. Source draft: `Nimbalyst/workspace/essay-two-years-behind/draft-v4.md`
+(v3 has the cut status-report version). `og:image` is `one-year-in-og.png`, the chart at 1200×630.
+LinkedIn: not posted yet; scheduled Thu 10/29.
+
 ## 2026-10-26 — LinkedIn: gap shapes (What a Bend Buys, second post)
 
 Posted by Alan. Monday slot. Draft: `Nimbalyst/workspace/Neutron Streaming/linkedin-draft-2026-10-26-gap-shapes.md`;
