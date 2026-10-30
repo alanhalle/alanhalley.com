@@ -15,3 +15,7 @@ First comment (post right after submitting):
     The physics is where I check the AI hardest: one paper graded 135 AI-written OpenMC inputs on whether the physics was right, not just whether they ran.
 
 Post on a weekday morning, US Eastern time.
+
+Ready answer if someone asks "How were you so productive?" (Alan's points, 2026-10-30; his wording to finalize):
+
+    Claude did most of the typing. But I've been productive since I was ten. I've owned five companies that didn't succeed and managed about a hundred IT projects, so I know what to build, when to stop, and what done looks like. I have engineering degrees, so I can tell when the physics is wrong. And I live on a beach in Brazil with no commute and no meetings.
