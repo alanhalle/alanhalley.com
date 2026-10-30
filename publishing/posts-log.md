@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-10-30 — projectmanagement.com reply: "How are you using AI in your agile work?"
+
+Alan replied in the PMI thread (Michael Brinn, Sep 2025) with the agents-do-the-work reply — 11 projects and three papers this year, the agent writes, runs and keeps the status report — ending "If an agent can do the sprint's work in an afternoon, what is the sprint for?" plus the One Year In link.
+
 ## 2026-10-30 — Nimbalyst Discord: One Year In
 
 Posted by Alan in #share-how-you-use-nimbalyst: short description plus link; the link unfurled with the essay title and thumbnail (og:image). Board/PM-system story held back for a later post.
