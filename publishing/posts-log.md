@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-10-30 — Nimbalyst Discord: One Year In
+
+Posted by Alan in #share-how-you-use-nimbalyst: short description plus link; the link unfurled with the essay title and thumbnail (og:image). Board/PM-system story held back for a later post.
+
 ## 2026-10-26 — Essay: One Year In
 
 https://alanhalley.com/writing/one-year-in/ — published three days ahead of the 10/29 target. "What I've
