@@ -286,6 +286,16 @@ Thoughtworks retreat report — all linked inline.
 without the essay's full case-study detail) as a reply to Aaron Porter's RACI question in a
 LinkedIn thread on multi-agent coordination — no link back to the site, standalone comment.
 
+**Later note (2026-11-01) — New Altitude, a product aimed at this problem.** Nate B. Jones
+(ex-Amazon PM, daily AI newsletter) founded New Altitude in Aug 2026 (newaltitude.ai, page at
+/consulting; 2–10 staff). Pitch, from its LinkedIn page: "Your agents work faster than you can
+read, and every call still comes back to your best people." It "learns their judgment" and
+carries it into every agent; agents check with it before they act, and big calls come back to
+people with the work ready. Same gap as this essay — the warranty stays with a person — sold as
+a layer agents consult. Starting as consulting. Open question, the essay's own: how do they
+show the system decided the way the expert would have? Did it run, or was it right? Also maps
+to Miura-Ko's L4–L5 (see the AI-pilled candidate). Unverified beyond the LinkedIn page.
+
 ## 2026-09-07 — Project page: Sapetinga Restaurant (pre-feasibility concept)
 
 New project page: `/projects/sapetinga-restaurant/`. A concept-with-numbers look
