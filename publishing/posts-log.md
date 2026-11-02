@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-11-02 — LinkedIn: Done Is a Claim
+
+Posted Monday ~10 am Ilhéus (8 am ET; US clocks went back Nov 1). Essay published Sep 11, first time on LinkedIn. Text from the essay's own sentences: thirty physics problems, four programs that never ran the calculation, "Exit code zero is the machine's version of moving a card to Done," the warranty paragraph, then the link. No attached image (preview card only).
+
 ## 2026-10-30 — projectmanagement.com reply: "How are you using AI in your agile work?"
 
 Alan replied in the PMI thread (Michael Brinn, Sep 2025) with the agents-do-the-work reply — 11 projects and three papers this year, the agent writes, runs and keeps the status report — ending "If an agent can do the sprint's work in an afternoon, what is the sprint for?" plus the One Year In link.
