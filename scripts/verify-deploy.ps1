@@ -7,6 +7,9 @@ $base = "https://alanhalley.com"
 $pages = @(
     @{ url = "/";                                     check = 'href="/shielding/">Details' }
     @{ url = "/about/";                               check = 'href="/#work">Work With Me' }
+    @{ url = "/writing/";                             check = "/writing/excremedia/" }
+    @{ url = "/writing/excremedia/";                  check = "Coined by Alan Halley, November 3, 2026" }
+    @{ url = "/writing/excremedia/";                  check = "excremedia-og.png" }
     @{ url = "/writing/";                             check = "/writing/one-year-in/" }
     @{ url = "/writing/one-year-in/";                 check = "20 LinkedIn posts" }
     @{ url = "/writing/one-year-in/timeline.js?v=1";  check = "Data frozen at publication, 2026-10-26" }

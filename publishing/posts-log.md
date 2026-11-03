@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-11-03 — Essay: Excremedia
+
+Published https://alanhalley.com/writing/excremedia/ — coins the word "excremedia" (Alan, 2026-11-03: "Social media, from the point of view of someone trying to tell people what he built"), dated on the page as "Coined by Alan Halley, November 3, 2026" so the page is the citable origin. Grew out of the dead HN submission of One Year In the same day; started as "Software Hell" (drafts v1–v3 in the folder). Contrast: 1984 (200 letters, two offers) and dice.com (one Apply button) vs. 2026 (HN dead ×3, Mastodon disabled, Fiverr/Upwork unseen, Toptal, YC Confounders, LinkedIn API terms forbid automated posting). Card image `excremedia-og.png` (rainbow word, built-this-year vs. trying-to-show-anyone chips). Not yet posted anywhere.
+
 ## 2026-11-03 — Hacker News: One Year In (dead on arrival)
 
 Regular submission, title "One Year In: What I've accomplished with AI, starting at zero" (page title + dek, per HN's original-title rule), URL only, no text. Item https://news.ycombinator.com/item?id=50352352 — **dead immediately** (API `dead: true`). Same for the two before it: 49549424 (Sep 3, the DVMBA Show HN) and 49730648 (Sep 16). The last live one was 48326870 (May 29). First comment not posted. Email to hn@ycombinator.com drafted in Gmail asking whether the account or alanhalley.com is penalized. Hold further HN posts (One File, One Vendor on 11/10) until there's an answer.
