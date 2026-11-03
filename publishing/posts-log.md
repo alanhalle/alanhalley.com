@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-11-03 — Hacker News: One Year In (dead on arrival)
+
+Regular submission, title "One Year In: What I've accomplished with AI, starting at zero" (page title + dek, per HN's original-title rule), URL only, no text. Item https://news.ycombinator.com/item?id=50352352 — **dead immediately** (API `dead: true`). Same for the two before it: 49549424 (Sep 3, the DVMBA Show HN) and 49730648 (Sep 16). The last live one was 48326870 (May 29). First comment not posted. Email to hn@ycombinator.com drafted in Gmail asking whether the account or alanhalley.com is penalized. Hold further HN posts (One File, One Vendor on 11/10) until there's an answer.
+
 ## 2026-11-02 — LinkedIn: Done Is a Claim
 
 Posted Monday ~10 am Ilhéus (8 am ET; US clocks went back Nov 1). Essay published Sep 11, first time on LinkedIn. Text from the essay's own sentences: thirty physics problems, four programs that never ran the calculation, "Exit code zero is the machine's version of moving a card to Done," the warranty paragraph, then the link. No attached image (preview card only).
