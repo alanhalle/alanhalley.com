@@ -1,5 +1,9 @@
 # Posts Log
 
+## 2026-11-03 — Facebook: One Year In
+
+Posted by Alan. Text = the One Year In LinkedIn draft (`writing/one-year-in/linkedin-draft.md`) with "Hover for details" changed to "Best viewed on a computer; click any bar to open it." Link card from the page's og:image (the chart).
+
 ## 2026-11-03 — Essay: Excremedia
 
 Published https://alanhalley.com/writing/excremedia/ — coins the word "excremedia" (Alan, 2026-11-03: "Social media, from the point of view of someone trying to tell people what he built"), dated on the page as "Coined by Alan Halley, November 3, 2026" so the page is the citable origin. Grew out of the dead HN submission of One Year In the same day; started as "Software Hell" (drafts v1–v3 in the folder). Contrast: 1984 (200 letters, two offers) and dice.com (one Apply button) vs. 2026 (HN dead ×3, Mastodon disabled, Fiverr/Upwork unseen, Toptal, YC Confounders, LinkedIn API terms forbid automated posting). Card image `excremedia-og.png` (rainbow word, built-this-year vs. trying-to-show-anyone chips). **Wayback snapshot** 2026-11-03 20:08 UTC: https://web.archive.org/web/20261103200825/https://alanhalley.com/writing/excremedia/ (third-party proof of the coinage date). **LinkedIn: posted 2026-11-03** — definition line, the year's numbers, "dysfunctional software… excremedia", link only (card from og:image). **X: posted 2026-11-03** (definition + link). Alan liked the card's colors.
